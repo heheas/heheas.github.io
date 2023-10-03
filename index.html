@@ -4,6 +4,7 @@
 <title>Goober Gobber Games</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./styles.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,32 +44,49 @@ body {font-family: "Lato", sans-serif}
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/la.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    <!-- Automatic Slideshow Images -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="./media/ProdLogo.png" style="width:100%; display: inline-block;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./media/OldMan.png" style="width:48%; display: inline-block;">
+            <img src="./media/ResourceDrive.png" style="width:48%; display: inline-block;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./media/Crystal.png" style="width:48%; display: inline-block;">
+            <img src="./media/PlasmaNode.png" style="width:48%; display: inline-block;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./media/Robot1.png" style="width:16%; display: inline-block;">
+            <img src="./media/Robot2Alt.png" style="width:16%; display: inline-block;">
+            <img src="./media/Robot3.png" style="width:10%; display: inline-block;">
+            <img src="./media/Robot4.png" style="width:16%; display: inline-block;">
+            <img src="./media/Robot5.png" style="width:16%; display: inline-block;">
+            <img src="./media/Robot6.png" style="width:16%; display: inline-block;">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <a class="pause" onclick="pauseSlides()"><i class="fa fa-pause" id="pauseIcon"></i></a>
+
     </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/ny.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
     </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/chicago.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-    </div>
-  </div>
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">THE BAND</h2>
+    <h2 class="w3-wide">Goober Gobber Games</h2>
     <p class="w3-opacity"><i>We love music</i></p>
     <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
       ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
