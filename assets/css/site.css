@@ -36,6 +36,13 @@
   position: absolute;
 }
 
+.goober-slider li.leftToRight {
+  align-items:right;
+}
+.goober-slider li.rightToLeft {
+  align-items:left;
+}
+
 .goober-slider li.focus {
   width: 100%;
 }
