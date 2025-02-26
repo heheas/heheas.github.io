@@ -30,7 +30,9 @@
   justify-content: center;
   align-items: center;
   width: 0px;
+  height: 100%;
   overflow: hidden; 
+  transition: width 2s;
 }
 
 .goober-slider li.focus {
