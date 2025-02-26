@@ -33,7 +33,7 @@
   overflow: hidden; 
 }
 
-.goober-slider li .focus {
+.goober-slider li.focus {
   width: 100%;
 }
 
