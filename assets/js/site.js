@@ -1,5 +1,6 @@
 let swiper;
 function init() {
+  console.log("Swiper");
   swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'vertical',
