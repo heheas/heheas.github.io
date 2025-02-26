@@ -17,12 +17,12 @@
   vertical-align: middle !important;
 }
 
-goober-slider {
+.goober-slider {
   width: 100%;
   height: 100%;
 }
 
-goober-slider li {
+.goober-slider li {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -31,7 +31,7 @@ goober-slider li {
   align-items: center;
 }
 
-swiper-slide img {
+.swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
