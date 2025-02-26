@@ -17,12 +17,12 @@
   vertical-align: middle !important;
 }
 
-swiper-container {
+goober-slider {
   width: 100%;
   height: 100%;
 }
 
-swiper-slide {
+goober-slider li {
   text-align: center;
   font-size: 18px;
   background: #fff;
