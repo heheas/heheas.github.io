@@ -1,4 +1,4 @@
-const swiper;
+let swiper;
 function init() {
   swiper = new Swiper('.swiper', {
     // Optional parameters
