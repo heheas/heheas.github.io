@@ -25,10 +25,15 @@
 .goober-slider li {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: rgb(255,255,255,.1);
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 0px;
+}
+
+.goober-slider li .focus {
+  width: 100%;
 }
 
 .swiper-slide img {
