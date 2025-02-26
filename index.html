@@ -6,20 +6,6 @@
     <meta name="description" content="Goober Gobber Games">
     <meta name="author" content="Scott Andrews">
     <title>Goober Gobber Games</title>
-	<script>
-	import Splide from '@splidejs/splide';
-	
-	function init() {
-		var splide = new Splide( '.splide', {
-		  type    : 'loop',
-		  perPage : 3,
-		  autoplay: true,
-		} );
-		
-		splide.mount();
-	}
-
-</script>
     <!-- font icons -->
     <!-- <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css"> -->
     <script src="https://kit.fontawesome.com/01de864f48.js" crossorigin="anonymous"></script>
@@ -34,6 +20,20 @@
      <!-- Splide -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" type="module"></script>
 <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+	<script>
+	import Splide from '@splidejs/splide';
+	
+	function init() {
+		var splide = new Splide( '.splide', {
+		  type    : 'loop',
+		  perPage : 3,
+		  autoplay: true,
+		} );
+		
+		splide.mount();
+	}
+
+</script>
 
 </head>
 <body onload="init()" data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
