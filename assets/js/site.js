@@ -1,4 +1,3 @@
-
 	import Splide from '@splidejs/splide';
 		
 	function init() {
