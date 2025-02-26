@@ -37,10 +37,10 @@
 }
 
 .goober-slider li.leftToRight {
-  align-items:right;
+  align-items:flex-start;
 }
 .goober-slider li.rightToLeft {
-  align-items:left;
+  align-items:flex-end;
 }
 
 .goober-slider li.focus {
