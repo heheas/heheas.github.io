@@ -23,6 +23,8 @@
 	<script>
 	
 	function init() {
+		await import("./my-module.js");
+		
 		var splide = new Splide( '.splide', {
 		  type    : 'loop',
 		  perPage : 3,
