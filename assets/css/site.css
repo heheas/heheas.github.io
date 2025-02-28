@@ -49,16 +49,19 @@
   /*align-items:flex-end;*/
   left: -100%;
   background:red;
+  z-index: 98;
 }
 .goober-slider li.right {
   /*align-items:flex-start;*/
   left: 100%;
   background: green;
+  z-index:98;
 }
 .goober-slider li.focus {
   /*width: 100%;*/
   left: 0;
   background: yellow;
+  z-index: 99;
 }
 
 .goober-slider img {
