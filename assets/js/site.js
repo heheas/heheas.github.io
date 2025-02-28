@@ -5,7 +5,8 @@ function nextSlide() {
   let nextPanel = focusPanel.next().length ? focusPanel.next() : $('.goober-slider li').first();
   //prevPanel.removeClass("left").addClass("right").css("visibility", "hidden");
   focusPanel.removeClass("focus").addClass("left");
-  nextPanel.addClass("focus").css("visibility", "visible");
+  nextPanel.removeClass("right").addClass("focus").css("visibility", "visible");
+  
   
   $('.goober-slider-prev').attr('disabled', true);
   $('.goober-slider-next').attr('disabled', true);
