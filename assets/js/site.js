@@ -1,21 +1,17 @@
 function nextSlide() {
   let focusPanel = $('.goober-slider li.focus');
   let prevPanel = focus.prev().length ? focus.prev() : $('.goober-slider li').last();
-  prevPanel.hide();
   let nextPanel = focus.next().length ? focus.next() : $('.goober-slider li').first();
-  nextPanel.show();
-  prevPanel.removeClass("left").addClass("right");
+  prevPanel.removeClass("left").addClass("right").css("visibility", "hidden");
   focusPanel.removeClass("focus").addClass("left")
-  nextPanel.removeClass("right").addClass("focus");
+  nextPanel.removeClass("right").addClass("focus").css("visibility", "visible");
 }
 
 function prevSlide() {
   let focusPanel = $('.goober-slider li.focus');
   let prevPanel = focus.prev().length ? focus.prev() : $('.goober-slider li').last();
-  prevPanel.show();
   let nextPanel = focus.next().length ? focus.next() : $('.goober-slider li').first();
-  nextPanel.hide();
-  prevPanel.removeClass("left").addClass("focus");
+  prevPanel.removeClass("left").addClass("focus").css("visibility", "visible");;
   focusPanel.removeClass("focus").addClass("right");
-  nextPanel.removeClass("right").addClass("left");
+  nextPanel.removeClass("right").addClass("left").css("visibility", "hidden");;
 }
