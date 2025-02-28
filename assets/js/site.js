@@ -11,7 +11,7 @@ function prevSlide() {
   let focus = $('.goober-slider li.focus');
   let prevFocus = focus.prev().length ? focus.prev() : $('.goober-slider li').last();
   let nextFocus = focus.next().length ? focus.next() : $('.goober-slider li').first();
-  prevFocus.removeClass("left").addClass("focus").removeProp("display");
+  prevFocus.removeClass("left").addClass("focus").css("display", "inline-block");
   focus.removeClass("focus").addClass("right");
-  nextFocus.removeClass("right").addClass("left").css("display", "inline-block");
+  nextFocus.removeClass("right").addClass("left").css("display", "none");
 }
