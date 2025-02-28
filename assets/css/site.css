@@ -27,10 +27,12 @@
 }
 
 .goober-slider-prev {
-  left: 5%;
+  left: 2%;
+  position: relative;
 }
 .goober-slider-next {
-  right: 5%;
+  right: 2%;
+  position: relative;
 }
 .goober-slider li {
   left: 0;
