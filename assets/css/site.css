@@ -17,6 +17,10 @@
   vertical-align: middle !important;
 }
 
+.goober-header-content {
+  margin: 30% 30%;
+}
+
 .goober-slider {
     background: blue;
     position: relative;
