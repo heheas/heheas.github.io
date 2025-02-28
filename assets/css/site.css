@@ -21,13 +21,15 @@
     position: relative;
     display: inline-flex;
     width:100%;
+  min-height: 200px;
     max-width: 800px;
+  overflow: hidden;
 }
 
 .goober-slider li {
   left: 0;
   width: 100%;
-  min-height: 200px;
+  height: 100%;
   background: rgba(255, 255, 255, 0.3);
   position: absolute;
   display: inline-block;
