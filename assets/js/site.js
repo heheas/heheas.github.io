@@ -1,17 +1,21 @@
 function nextSlide() {
-  let focus = $('.goober-slider li.focus');
+  let focusPanel = $('.goober-slider li.focus');
   let prevPanel = focus.prev().length ? focus.prev() : $('.goober-slider li').last();
+  prevPanel.hide();
   let nextPanel = focus.next().length ? focus.next() : $('.goober-slider li').first();
-  prevPanel.removeClass("left").addClass("right").hide();
-  focus.removeClass("focus").addClass("left")
-  nextPanel.removeClass("right").addClass("focus").show();
+  nextPanel.show();
+  prevPanel.removeClass("left").addClass("right");
+  focusPanel.removeClass("focus").addClass("left")
+  nextPanel.removeClass("right").addClass("focus");
 }
 
 function prevSlide() {
-  let focus = $('.goober-slider li.focus');
-  let prevFocus = focus.prev().length ? focus.prev() : $('.goober-slider li').last();
-  let nextFocus = focus.next().length ? focus.next() : $('.goober-slider li').first();
-  prevFocus.removeClass("left").addClass("focus").show();
-  focus.removeClass("focus").addClass("right");
-  nextFocus.removeClass("right").addClass("left").hide();
+  let focusPanel = $('.goober-slider li.focus');
+  let prevPanel = focus.prev().length ? focus.prev() : $('.goober-slider li').last();
+  prevPanel.show();
+  let nextPanel = focus.next().length ? focus.next() : $('.goober-slider li').first();
+  nextPanel.hide();
+  prevPanel.removeClass("left").addClass("focus");
+  focusPanel.removeClass("focus").addClass("right");
+  nextPanel.removeClass("right").addClass("left");
 }
