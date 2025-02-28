@@ -26,23 +26,13 @@
 }
 
 .goober-slider li {
-  /*text-align: center;
-  font-size: 18px;
-  background: rgb(255,255,255,.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0px;
-  height: inherit;
-  overflow: hidden; 
-  transition: width 2s;
-  position: absolute;*/
   left: 0;
   width: 100%;
   background: rgba(140, 80, 40, 0.6);
   position: absolute;
   display: inline-block;
   transition: left 2s;
+  
 }
 
 .goober-slider li.left {
@@ -64,6 +54,7 @@
   left: 0;
   background: yellow;
   z-index: 99;
+  display: inline-block;
 }
 
 .goober-slider img {
