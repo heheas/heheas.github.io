@@ -50,12 +50,14 @@
   left: -100%;
   background:red;
   z-index: 98;
+  display: none;
 }
 .goober-slider li.right {
   /*align-items:flex-start;*/
   left: 100%;
   background: green;
   z-index:98;
+  display: none;
 }
 .goober-slider li.focus {
   /*width: 100%;*/
