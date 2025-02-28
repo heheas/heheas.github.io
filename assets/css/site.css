@@ -37,12 +37,12 @@
 
 .goober-slider li.left {
   /*align-items:flex-end;*/
-  left: -100%;
+  left: -110%;
   z-index: 98;
 }
 .goober-slider li.right {
   /*align-items:flex-start;*/
-  left: 100%;
+  left: 110%;
   z-index:98;
 }
 .goober-slider li.focus {
