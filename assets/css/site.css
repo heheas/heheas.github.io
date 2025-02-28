@@ -26,6 +26,12 @@
   overflow: hidden;
 }
 
+.goober-slider-prev {
+  left: 5%;
+}
+.goober-slider-next {
+  right: 5%;
+}
 .goober-slider li {
   left: 0;
   width: 100%;
