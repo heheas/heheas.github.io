@@ -18,7 +18,6 @@
 }
 
 .goober-slider {
-    background: rgba(0,0,255, 0.2);
     position: relative;
     display: inline-flex;
     width:100%;
@@ -28,11 +27,12 @@
 .goober-slider li {
   left: 0;
   width: 100%;
-  background: rgba(140, 80, 40, 0.6);
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
   position: absolute;
   display: inline-block;
   transition: left 2s;
-  
+  border-radius: 20px;
 }
 
 .goober-slider li.left {
