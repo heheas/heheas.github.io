@@ -120,6 +120,12 @@ a:focus {
   border: none;
 }
 
+.navbar-brand {
+  display: inline-flex !important;
+  position: absolute;
+  right: 0px;
+}
+
 .navbar-brand span {
   font-size: 24px;
   font-weight: 700;
