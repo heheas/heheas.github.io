@@ -222,10 +222,10 @@ a:focus {
 
 .nav-social-item {
   display:inline-flex;
-}
-
-.nav-social a {
-  height: 100%;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .nav-social svg, .nav-social i {
