@@ -35,15 +35,17 @@
     align-items: center;
 }
 
-.goober-slider-prev {
-  left: 2%;
+.goober-slider-ctrls .div {
   position: absolute;
   transition: background 0.5s;
+  padding: 4px;
+  border-radius:4px;
 }
-
+.goober-slider-prev {
+  left: 2%;
+}
 .goober-slider-next {
   right: 2%;
-  position: absolute;
 }
 .goober-slider-prev:hover, .goober-slider-next:hover {
   background: rgba(255,255,255, 0.1);
