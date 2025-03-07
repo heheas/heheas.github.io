@@ -209,10 +209,11 @@ a:focus {
   margin-right: 5px;
 }
 
+.nav-link .nav-social {
+  display: inline-flex;
+}
 .nav-social {
   height: 1lh;
-  line-height: 1;
-  display: inline-flex;
 }
 
 .nav-social:hover {
@@ -220,8 +221,7 @@ a:focus {
 }
 
 .nav-social a {
-  line-height: 1;
-  height: 1lh;
+  height: 100%;
 }
 
 .nav-social svg, .nav-social i {
