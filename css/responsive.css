@@ -27,11 +27,19 @@
     align-items: center;
   }
 
-  .nav-social {
+  .nav-social {    
     position: inherit;
-    right: initial;
+    margin: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
+  .nav-social-items a {
+    font-size: x-large;
+  }
+  
 }
 
 @media (max-width: 768px) {
