@@ -43,7 +43,12 @@
   .nav-social-item a {
     font-size: x-large;
   }
-  
+
+  .navbar-menu {
+    display:inline-flex;
+    position: absolute;
+    right: 0px;
+  }
 }
 
 @media (max-width: 768px) {
