@@ -209,12 +209,11 @@ a:focus {
   margin-right: 5px;
 }
 
-.nav-social .nav-link {
-  height: 1lh;
-}
 
 .nav-social {
   height: 1lh;
+  position: absolute;
+  right: 0px;
 }
 
 .nav-social:hover {
