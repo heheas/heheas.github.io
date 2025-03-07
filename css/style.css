@@ -210,7 +210,7 @@ a:focus {
 }
 
 .nav-social .nav-link {
-  display: inline-flex;
+  height: 1lh;
 }
 
 .nav-social {
