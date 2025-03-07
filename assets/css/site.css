@@ -37,9 +37,11 @@
 
 .goober-slider-prev {
   left: 2%;
+  position: relative;
 }
 .goober-slider-next {
   right: 2%;
+  position: relative;
 }
 .goober-slider li {
   left: 0;
