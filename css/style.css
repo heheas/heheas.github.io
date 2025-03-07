@@ -120,6 +120,10 @@ a:focus {
   border: none;
 }
 
+.navbar {
+  min-height: 52px;
+}
+
 .navbar-brand {
   display: inline-flex !important;
   position: absolute;
