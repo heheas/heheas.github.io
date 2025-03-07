@@ -209,9 +209,10 @@ a:focus {
   margin-right: 5px;
 }
 
-.nav-link .nav-social {
+.nav-social .nav-link {
   display: inline-flex;
 }
+
 .nav-social {
   height: 1lh;
 }
