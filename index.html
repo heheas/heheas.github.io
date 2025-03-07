@@ -9,14 +9,15 @@
     <!-- font icons -->
     <!-- <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css"> -->
     <script src="https://kit.fontawesome.com/01de864f48.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide" crossorigin="anonymous"></script>
-
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/imgs/rocco/favicon.ico">
 
     <!-- Bootstrap + Dorang main styles -->
 	<link rel="stylesheet" href="assets/css/dorang.css">
+	
+	<!-- Site -->
 	<link rel="stylesheet" href="assets/css/site.css">
+	<script src="assets/js/site.js"></script>
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
@@ -41,27 +42,32 @@
         <div class="overlay"></div>
         <div class="header-content">
             <h1 class="header-title">What Happens Tomorrow?</h1>
-            <div class="glide">
-		  <div class="glide__track" data-glide-el="track">
-		    <ul class="glide__slides">
-		      <li class="glide__slide">0</li>
-		      <li class="glide__slide">1</li>
-		      <li class="glide__slide">2</li>
-		    </ul>
-		  </div>
+
+		<div class="goober-slider">
+			<div class="goober-slider-ctrls">
+			    <div class="goober-slider-prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></div>
+			    <div class="goober-slider-next" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></div>
+			</div>
+		<ul>
+			<li class="left">Slide 1</li>
+			<li class="focus">Slide 2</li>
+			<li class="right">Slide 3</li>
+			<li class="right">Slide 4</li>
+			<li class="right">Slide 5</li>
+		</ul>
 		</div>
 
         </div>
     </header><!-- end of page header -->
 
-    <!-- modal -->
+    <!-- modal
     <div class="modalBox">
         <div class="modalBox-body">
             <iframe width="100%" height="450px" class="border-0" 
             src="https://www.youtube.com/embed/tgbNyZ7vqY?controls=0">
             </iframe>
         </div>          
-    </div><!-- end of modal -->
+    </div> end of modal -->
 
     <!-- page container -->
     <div class="container page-container">
