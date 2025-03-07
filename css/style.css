@@ -221,6 +221,10 @@ a:focus {
   background: rgba(255, 255, 255, 0.4);
 }
 
+.nav-social-link {
+  display:inline-flex;
+}
+
 .nav-social a {
   height: 100%;
 }
