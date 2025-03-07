@@ -35,7 +35,7 @@
     align-items: center;
 }
 
-.goober-slider-ctrls .div {
+.goober-slider-ctrls div {
   position: absolute;
   transition: background 0.5s;
   padding: 4px;
