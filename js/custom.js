@@ -11,7 +11,6 @@ function toggleMenu() {
     $('.menuToggle').toggleClass('menuToggleExpand');
 }
 
-/*
 $('.custom_slick_slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -35,7 +34,6 @@ $('.slick_slider_nav').slick({
     focusOnSelect: true,
     variableWidth: true
 });
-*/
 
 /** google_map js **/
 
