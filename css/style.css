@@ -123,7 +123,9 @@ a:focus {
 .navbar {
   min-height: 52px;
 }
-
+.navwrapper {
+  width: 100%;
+}
 
 .navbar-brand {
   display: inline-flex !important;
