@@ -124,7 +124,7 @@ a:focus {
   min-height: 52px;
 }
 
-.navbar .collapse {
+.navbar .collapse, .collapse:not(.show) {
   display: initial !important;
 }
 
