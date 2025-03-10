@@ -124,6 +124,10 @@ a:focus {
   min-height: 52px;
 }
 
+.navbar .collapse {
+  display: initial !important;
+}
+
 .navbar-brand {
   display: inline-flex !important;
   position: absolute;
