@@ -124,9 +124,6 @@ a:focus {
   min-height: 52px;
 }
 
-.navbar .collapse, .collapse:not(.show) {
-  display: initial !important;
-}
 
 .navbar-brand {
   display: inline-flex !important;
