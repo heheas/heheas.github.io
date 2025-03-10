@@ -7,7 +7,7 @@ function getYear() {
 
 getYear();
 
-toggleMenu() {
+function toggleMenu() {
     $('.menuToggle').toggleClass('menuToggleExpand');
 }
 
