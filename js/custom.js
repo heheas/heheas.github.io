@@ -8,7 +8,8 @@ function getYear() {
 getYear();
 
 function toggleMenu() {
-    $('.navbar-toggler').attr('aria-expanded', !!!($('.menuToggle').attr('aria-expanded')));
+    let ariaExpanded = $('.menuToggle').attr('aria-expanded')) === "true";
+    $('.navbar-toggler').attr('aria-expanded', ariaExpanded);
     $('.menuToggle').toggleClass('menuToggleExpand');
 }
 /*
