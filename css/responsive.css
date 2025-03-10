@@ -44,7 +44,7 @@
     font-size: x-large;
   }
   
-  .navbar {
+  .navbar > .navbar-collapse show{
      background: plum;
   }
   
