@@ -44,10 +44,6 @@
     font-size: x-large;
   }
   
-  .navbar.has(> .navbar-collapse .show){
-     background: plum;
-  }
-  
   .navbar-menu {
     display:inline-flex;
     position: absolute;
