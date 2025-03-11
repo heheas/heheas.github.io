@@ -47,7 +47,7 @@
     display:inline-flex;
   }
 
-  .menuToggleExpand > .navWrapper {
+  .menuToggleExpand > .navwrapper {
     padding-top: 5px;
     padding-left: 30px;
     padding-right: 30px;
@@ -63,7 +63,7 @@
     left: 0px;
     top: 0px;
   }
-  .menuToggleExpand > .navWrapper  > .nav-social {
+  .menuToggleExpand > .navwrapper  > .nav-social {
     display: inline-flex;
     background: grey;
   }
