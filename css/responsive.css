@@ -35,7 +35,7 @@
     display:none;
   }
 
-  .menuBarExpand > .nav-social {
+  .menuToggleExpand > .nav-social {
     display: inline-flex;
   }
 
