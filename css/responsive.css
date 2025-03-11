@@ -32,12 +32,11 @@
   }
   
   .nav-social {    
-    position: inherit;
-    margin: 10px 0px 10px 0px;
+    display:none;
+  }
+
+  .menuBarExpand > .nav-social {
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
   }
 
   .nav-social-item {
