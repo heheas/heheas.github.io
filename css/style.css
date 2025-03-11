@@ -125,6 +125,7 @@ a:focus {
 }
 .navwrapper {
   width: 100%;
+  display: inline-flex;
 }
 
 .navbar-brand {
