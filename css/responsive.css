@@ -35,11 +35,6 @@
     display:none;
   }
 
-  .menuToggleExpand > .navWrapper  > .nav-social {
-    display: inline-flex;
-    background: grey;
-  }
-
   .nav-social-item {
     margin: 0px 5px 0px 5px;
   }
@@ -67,6 +62,10 @@
     background: plum;
     left: 0px;
     top: 0px;
+  }
+  .menuToggleExpand > .navWrapper  > .nav-social {
+    display: inline-flex;
+    background: grey;
   }
 }
 
