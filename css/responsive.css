@@ -27,6 +27,10 @@
     align-items: center;
   }
 
+  .navwrapper {
+    height: 100%;
+  }
+  
   .nav-social {    
     position: inherit;
     margin: 10px 0px 10px 0px;
@@ -48,6 +52,12 @@
     display:inline-flex;
     position: absolute;
     right: 0px;
+  }
+
+  .navWrapper .menuToggleExpand {
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .menuToggleExpand {
