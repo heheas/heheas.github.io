@@ -225,9 +225,7 @@ a:focus {
 
 
 .nav-social {
-  height: 1lh;
-  position: absolute;
-  right: 0px;
+  display: inline-flex;
 }
 
 .nav-social:hover {
