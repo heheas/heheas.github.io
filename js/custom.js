@@ -11,6 +11,15 @@ function toggleMenu() {
     let ariaExpanded = $('.navbar-toggler').attr('aria-expanded') === "true";
     $('.navbar-toggler').attr('aria-expanded', !ariaExpanded);
     $('.menuToggle').toggleClass('menuToggleExpand');
+    if (ariaExpanded) {
+        const content = $('.navbar-collapse').innerHTML();
+        $('.navbar-collapse').empty();
+        $('.navMenuFull').html(content);
+    } else {
+        const content = $('.navMenuFull').innerHTML();
+        $('.navMenuFull').empty();
+        $('.navbar-collapse').html(content);
+    }
 }
 /*
 $('.custom_slick_slider').slick({
