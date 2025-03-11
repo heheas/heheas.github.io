@@ -37,6 +37,7 @@
 
   .menuToggleExpand > .navWrapper  > .nav-social {
     display: inline-flex;
+    background: grey;
   }
 
   .nav-social-item {
@@ -55,6 +56,7 @@
     padding-top: 5px;
     padding-left: 30px;
     padding-right: 30px;
+    background:red;
   }
 
   .menuToggleExpand {
