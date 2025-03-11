@@ -49,8 +49,6 @@
   
   .navbar-menu {
     display:inline-flex;
-    position: absolute;
-    right: 0px;
   }
 
   .menuToggleExpand > .navWrapper {
