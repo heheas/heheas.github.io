@@ -30,8 +30,13 @@
   .navwrapper {
     height: 100%;
   }
+
+  .nav-social {
+    display: none;
+  }
   
-  .nav-social {    
+  .menuToggleExpand > .nav-social {    
+    display: inline-flex;
     line-height: 1lh;
   }
 
