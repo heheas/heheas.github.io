@@ -13,15 +13,11 @@ function toggleMenu() {
     $('.menuToggle').toggleClass('menuToggleExpand');
     $('.navbar-collapse').toggleClass('collapse');
     $('body').toggleClass('no-scroll');
-    /*if (!ariaExpanded) {
-        const content = $('.navbar-collapse').html();
-        $('.navbar-collapse').empty();
-        $('.navMenuFull').html(content);
+    if (!ariaExpanded) {
+        $('.nav-social').appendTo('.navbar-collapse > div');
     } else {
-        const content = $('.navMenuFull').html();
-        $('.navMenuFull').empty();
-        $('.navbar-collapse').html(content);
-    }*/
+        $('.nav-social').insertBefore('.navbar-menu');
+    }
 }
 /*
 $('.custom_slick_slider').slick({
