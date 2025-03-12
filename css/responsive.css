@@ -67,7 +67,7 @@
   }
 
   .navMenuFull {  
-    display: inline-flex;
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -76,6 +76,10 @@
     left: 0px;
     justify-content: center;
     align-items: center;
+  }
+
+  .menuToggleExpand + .navMenuFull {
+    display: inline-flex;
   }
 }
 
