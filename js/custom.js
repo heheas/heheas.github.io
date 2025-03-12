@@ -12,6 +12,7 @@ function toggleMenu() {
     $('.navbar-toggler').attr('aria-expanded', !ariaExpanded);
     $('.menuToggle').toggleClass('menuToggleExpand');
     $('.navbar-collapse').toggleClass('collapse');
+    $('body').toggleClass('no-scroll');
     /*if (!ariaExpanded) {
         const content = $('.navbar-collapse').html();
         $('.navbar-collapse').empty();
