@@ -129,6 +129,10 @@ a:focus {
   justify-content: space-between;
 }
 
+.no-scroll {
+  overflow:hidden;
+}
+
 .navbar-brand {
   display: inline-flex !important;
   /*position: absolute;*/
