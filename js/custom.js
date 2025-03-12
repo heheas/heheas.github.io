@@ -11,6 +11,7 @@ function toggleMenu() {
     let ariaExpanded = $('.navbar-toggler').attr('aria-expanded') === "true";
     $('.navbar-toggler').attr('aria-expanded', !ariaExpanded);
     $('.menuToggle').toggleClass('menuToggleExpand');
+    $('.navbar-collapse').toggleClass('collapse');
     /*if (!ariaExpanded) {
         const content = $('.navbar-collapse').html();
         $('.navbar-collapse').empty();
