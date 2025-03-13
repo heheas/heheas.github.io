@@ -52,6 +52,10 @@
     display:inline-flex;
   }
 
+  .navbar-title {
+    display: none;
+  }
+
   .menuToggleExpand > .navwrapper {
     padding-top: 5px;
     padding-left: 30px;
