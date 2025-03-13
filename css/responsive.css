@@ -86,7 +86,7 @@
       z-index: 98;
   }
 
-  .menuToggleExpand .navbar-collapse {
+  .menuToggleExpand > .navbar-collapse {
     display: inline-flex;
   }
   
