@@ -13,11 +13,11 @@ function toggleMenu() {
     $('.menuToggle').toggleClass('menuToggleExpand');
     $('.navbar-collapse').toggleClass('collapse');
     $('body').toggleClass('no-scroll');
-    /*if (!ariaExpanded) {
+    if (!ariaExpanded) {
         $('.nav-social').appendTo('.navbar-collapse > div');
     } else {
         $('.nav-social').insertBefore('.navbar-menu');
-    }*/
+    }
 }
 /*
 $('.custom_slick_slider').slick({
