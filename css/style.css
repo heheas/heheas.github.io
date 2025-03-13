@@ -138,11 +138,17 @@ a:focus {
   /*position: absolute;*/
 }
 
+.navbar-logo {
+  position: absolute;
+  height: 1lh;
+}
+
 .navbar-brand span {
   font-size: 24px;
   font-weight: 700;
   color: #272727;
   text-transform: uppercase;
+  padding: 45px;
 }
 
 .custom_nav-container {
