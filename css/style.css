@@ -126,6 +126,7 @@ a:focus {
   position: absolute;
   padding: 5px 45px;
   left: 0px;
+  z-index: 99;
 }
 .navwrapper {
   width: 100%;
