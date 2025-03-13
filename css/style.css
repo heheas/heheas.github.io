@@ -275,6 +275,7 @@ a:focus {
 
 .navbar-nav {
   flex-direction: row;
+  z-index:99;
 }
 
 /*end header section*/
