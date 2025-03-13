@@ -71,12 +71,12 @@
     left: 0px;
     top: 0px;
   }
+  
   .menuToggleExpand > .navwrapper  > .nav-social {
     display: inline-flex;
   }
   .navbar-collapse {
       position: fixed;
-      display: none;
       align-items: center;
       vertical-align: center;
       width: 100%;
@@ -86,8 +86,8 @@
       z-index: 98;
   }
 
-  .menuToggleExpand > .navbar-collapse {
-    display: inline-flex;
+  .navbar-collapse:not(.menuToggleExpand) {
+     display: none; 
   }
   
 .navbar-nav {
