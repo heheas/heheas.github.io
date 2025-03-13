@@ -62,11 +62,6 @@
     display: none;
   }
 
-  .menuToggleExpand > .navwrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .menuToggleExpand {
     width: 100%;
     height: 100%;
@@ -79,10 +74,9 @@
   .menuToggleExpand > .navwrapper  > .nav-social {
     display: inline-flex;
   }
-
   .navbar-collapse {
       position: fixed;
-      display: inline-flex;
+      display: hidden;
       align-items: center;
       vertical-align: center;
       width: 100%;
@@ -90,6 +84,10 @@
       left: 0px;
       top: 0px;
       z-index: 98;
+  }
+
+  .menuToggleExpand .navbar-collapse {
+    display: inline-flex;
   }
   
 .navbar-nav {
