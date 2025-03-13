@@ -76,7 +76,7 @@
   }
   .navbar-collapse {
       position: fixed;
-      display: hidden;
+      display: none;
       align-items: center;
       vertical-align: center;
       width: 100%;
