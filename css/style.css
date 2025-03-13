@@ -266,6 +266,14 @@ a:focus {
   vertical-align: middle !important;
 }
 
+.navbar-collapse {
+  display: flex;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
 /*end header section*/
 /* slider section */
 .slider_section {
