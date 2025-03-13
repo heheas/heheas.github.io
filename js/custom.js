@@ -10,7 +10,7 @@ getYear();
 function toggleMenu() {
     let ariaExpanded = $('.navbar-toggler').attr('aria-expanded') === "true";
     $('.navbar-toggler').attr('aria-expanded', !ariaExpanded);
-    $('.menuToggle').toggleClass('menuToggleExpand');
+    $('.navbar-collapse').toggleClass('menuToggleExpand');
     $('body').toggleClass('no-scroll');
     if (!ariaExpanded) {
         $('.nav-social').appendTo('.navbar-collapse > div');
