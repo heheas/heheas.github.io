@@ -76,6 +76,7 @@ body {
 
 .header_section {
   background-color: rgb(90,73,94);
+  color: #FFF;
 }
 
 .header_section .container-fluid {
@@ -90,7 +91,7 @@ body {
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 3px 15px;
   margin: 10px 15px;
-  color: #272727;
+  color: inherit;
   text-align: center;
   text-transform: uppercase;
 }
