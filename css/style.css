@@ -144,7 +144,6 @@ a:focus {
 
 .navbar-logo {
   position: inline-flex;
-  height: 1lh;
 }
 
 .navbar-brand span {
@@ -153,6 +152,7 @@ a:focus {
   color: #272727;
   text-transform: uppercase;
   padding-left: 10px;
+  line-height: 1lh;
 }
 
 .navbar-menu {
