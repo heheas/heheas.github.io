@@ -27,6 +27,11 @@
     align-items: center;
   }
 
+  .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+  
   .navwrapper {
     height: 100%;
   }
