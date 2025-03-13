@@ -140,6 +140,7 @@ a:focus {
 .navbar-brand {
   display: inline-flex !important;
   /*position: absolute;*/
+  line-height: 1lh;
 }
 
 .navbar-logo {
@@ -152,7 +153,6 @@ a:focus {
   color: #272727;
   text-transform: uppercase;
   padding-left: 10px;
-  line-height: 1lh;
 }
 
 .navbar-menu {
