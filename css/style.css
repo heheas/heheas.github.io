@@ -178,7 +178,7 @@ a:focus {
   display: block;
   width: 32px;
   height: 4px;
-  background-color: #000000;
+  background-color: #FFF;
   border-radius: 15px;
   margin: 7px 0;
   -webkit-transition: all 0.3s;
