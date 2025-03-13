@@ -29,8 +29,7 @@
 
   .navbar {
     position: relative;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: inherit 15px;
   }
   
   .navwrapper {
