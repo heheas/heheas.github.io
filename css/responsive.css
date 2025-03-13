@@ -29,6 +29,9 @@
 
   .navbar {
     position: relative;
+  }
+
+  .navbar-full { 
     padding: inherit 15px;
   }
   
