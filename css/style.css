@@ -138,13 +138,13 @@ a:focus {
 }
 
 .navbar-brand {
-  display: inline-flex !important;
+  display: inline-flex;
   /*position: absolute;*/
 }
 
 .navbar-logo {
-  position: inline-flex;
-  line-height: 1lh;
+  display: inline-flex;
+  height: 1lh;
 }
 
 .navbar-brand span {
