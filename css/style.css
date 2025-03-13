@@ -271,6 +271,7 @@ a:focus {
 
 .navbar-collapse {
   display: flex;
+  position: relative;
   min-height: 52px;
 }
 
