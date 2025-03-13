@@ -125,6 +125,7 @@ a:focus {
   width:100%;
   position: absolute;
   padding: 5px 45px;
+  left: 0px;
 }
 .navwrapper {
   width: 100%;
@@ -270,6 +271,7 @@ a:focus {
 
 .navbar-collapse {
   display: flex;
+  min-height: 52px;
 }
 
 .navbar-nav {
