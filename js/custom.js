@@ -13,7 +13,7 @@ function toggleMenu() {
     $('.navbar-collapse').toggleClass('menuToggleExpand');
     $('body').toggleClass('no-scroll');
     if (!ariaExpanded) {
-        $('.nav-social').appendTo('.navbar-collapse > div');
+        $('.nav-social').appendTo('.navbar-collapse');
     } else {
         $('.nav-social').insertBefore('.navbar-menu');
     }
