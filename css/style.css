@@ -238,6 +238,9 @@ a:focus {
   margin-right: 5px;
 }
 
+.navbar-full {
+  padding: 0px 45px;
+}
 
 .nav-social {
   display: inline-flex;
