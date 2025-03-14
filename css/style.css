@@ -277,7 +277,7 @@ a:focus {
 /*end header section*/
 
 /* section styling */
-section:nth-child(odd) {
+section:nth-child(even) {
   background-color: #483A4B;
 }
 
@@ -319,6 +319,10 @@ section:nth-child(odd) {
 
 .slider_section .detail-box p {
   margin: 25px 0;
+}
+
+.slider_section .detail-box img {
+  width: 100%;
 }
 
 .slider_section .detail-box .btn-box {
