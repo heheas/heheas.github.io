@@ -123,6 +123,7 @@ a:focus {
 
 .navbar {
   min-height: 52px;
+  padding: 5px 45px;
   width:100%;
   position: absolute;
   left: 0px;
