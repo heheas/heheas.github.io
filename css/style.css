@@ -125,7 +125,6 @@ a:focus {
   min-height: 52px;
   width:100%;
   position: absolute;
-  padding: 5px 45px;
   left: 0px;
   z-index: 99;
 }
