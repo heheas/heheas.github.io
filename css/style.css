@@ -235,7 +235,7 @@ a:focus {
   display: inline-flex;
 }
 
-.nav-link:hover {
+.nav-item a:hover, .nav-link:hover {
   color: rgba(255, 255, 255, 0.4);
 }
 
