@@ -29,6 +29,7 @@
 
   .navbar {
     position: relative;
+    padding: 0px;
   }
 
   .navbar-full { 
