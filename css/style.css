@@ -408,6 +408,10 @@ section:nth-child(odd) {
   display: flex;
 }
 
+.slider_section .carousel-inner > div {
+  height: 100%;
+}
+
 .slider_section .container {
   max-width: 800px;
 }
