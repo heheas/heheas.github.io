@@ -420,13 +420,17 @@ section:nth-child(odd) {
 .slider_section .selectors {
   display: flex;
   flex-direction: row;
+  width: 100%;
   max-width:1200px;
+  align-items: stretch;
 }
 
 .slider_section .selectors .flair {
-  border: 4px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
