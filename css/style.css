@@ -408,7 +408,7 @@ section:nth-child(odd) {
   display: flex;
 }
 
-.slider_section .carousel-inner > div {
+.slider_section .carousel-inner div {
   height: 100%;
 }
 
