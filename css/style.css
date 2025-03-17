@@ -284,8 +284,8 @@ section:nth-child(odd) {
 section span.section_transition {
   
   height:30px;
-  -webkit-mask-image: url('images/rocco/sectionMask.png');
-  mask-image: url('images/rocco/sectionMask.png');
+  -webkit-mask-image: url('../images/rocco/sectionMask.png');
+  mask-image: url('../images/rocco/sectionMask.png');
   mask-repeat: no-repeat;
 }
 
