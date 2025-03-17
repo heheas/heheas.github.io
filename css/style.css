@@ -398,6 +398,7 @@ section:nth-child(odd) {
 .slider_section .carousel-inner {
   background: #000;
   max-width: 1200px;
+  border-radius: 15
 }
 
 .slider_section .container {
