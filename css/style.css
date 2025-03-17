@@ -407,6 +407,7 @@ section:nth-child(odd) {
   max-width: 1200px;
   border-radius: 15px;
   display: flex;
+  height: 400px;
 }
 
 .slider_section .carousel-inner div {
