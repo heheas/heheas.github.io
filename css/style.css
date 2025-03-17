@@ -293,6 +293,7 @@ section:nth-child(odd) {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  justify-content: center;
 }
 
 .slider_section .row {
@@ -398,7 +399,7 @@ section:nth-child(odd) {
 .slider_section .carousel-inner {
   background: #000;
   max-width: 1200px;
-  border-radius: 15
+  border-radius: 15;
 }
 
 .slider_section .container {
