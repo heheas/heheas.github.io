@@ -276,7 +276,7 @@ a:focus {
 /*end header section*/
 
 /* section styling */
-section:nth-child(odd) {
+section:nth-child(odd), section span.section_transition:nth-child(odd) {
   background-color: #483A4B;
 }
 
@@ -286,11 +286,12 @@ section span.section_transition {
   -webkit-mask-image: url('../images/rocco/Mask.png');
   mask-image: url('../images/rocco/Mask.png');
   mask-repeat: no-repeat;
+    mask-size: 100% 30px;
 }
 
 section {
   padding-top:30px;
-  top: -30px;
+  top: 30px;
 }
 
 /*end section styling*/
