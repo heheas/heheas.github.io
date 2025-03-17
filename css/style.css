@@ -303,6 +303,8 @@ section:nth-child(odd) {
   z-index: 3;
   display:inline-flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .slider_section .detail-box {
@@ -369,7 +371,7 @@ section:nth-child(odd) {
 }
 
 .slider_section .carousel-indicators {
-  position: unset;
+  position: relative;
   margin: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -378,6 +380,7 @@ section:nth-child(odd) {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 45px;
+  display: flex;
 }
 
 .slider_section .carousel-indicators li {
@@ -398,6 +401,7 @@ section:nth-child(odd) {
   background: #000;
   max-width: 1200px;
   border-radius: 15px;
+  display: flex;
 }
 
 .slider_section .container {
