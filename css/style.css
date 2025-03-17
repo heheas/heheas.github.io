@@ -366,11 +366,11 @@ section:nth-child(odd) {
   color: #6bb7be;
 }
 
-.slider_section > .img-box img {
+.slider_section .img-box img {
   width: 100%;
 }
 
-.slider_section > .img-box img .pad {
+.slider_section .img-box .pad {
   padding: 25px;
 }
 
