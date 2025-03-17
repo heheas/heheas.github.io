@@ -417,9 +417,16 @@ section:nth-child(odd) {
   max-width: 800px;
 }
 
+.slider_section .selectors {
+  display: flex;
+  flex-direction: row;
+  max-width:1200px;
+}
+
 .slider_section .selectors .flair {
   border: 4px solid black;
   border-radius: 5px;
+  width: 100%;
 }
 
 
