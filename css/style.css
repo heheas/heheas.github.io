@@ -276,7 +276,7 @@ a:focus {
 /*end header section*/
 
 /* section styling */
-section:nth-child(odd), section span.section_transition:nth-child(odd) {
+section:nth-child(odd), section:nth-child(odd) span.section_transition {
   background-color: #483A4B;
 }
 
