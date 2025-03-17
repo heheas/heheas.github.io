@@ -281,11 +281,16 @@ section:nth-child(odd) {
 }
 
 section span.section_transition {
-  
+  width:100%;
   height:30px;
   -webkit-mask-image: url('../images/rocco/sectionMask.png');
   mask-image: url('../images/rocco/sectionMask.png');
   mask-repeat: no-repeat;
+}
+
+section {
+  padding-top:30px;
+  top: -30px;
 }
 
 /*end section styling*/
