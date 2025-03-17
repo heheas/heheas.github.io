@@ -370,7 +370,7 @@ section:nth-child(odd) {
   width: 100%;
 }
 
-.slider_section .img-box .pad {
+.slider_section .img-box.pad {
   padding: 25px;
 }
 
