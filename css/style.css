@@ -395,6 +395,15 @@ section:nth-child(odd) {
   background-color: #f89646;
 }
 
+.slider_section .carousel-inner {
+  background: #000;
+  max-width: 1200px;
+}
+
+.slider_section .container {
+  max-width: 800px;
+}
+
 .furniture_section .box {
   margin-top: 45px;
   background-color: #f7fafa;
