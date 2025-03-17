@@ -1,5 +1,5 @@
-/* fonts import */
-@import url("../fonts/octin_sports_rg.ttf");
+/* fonts import 
+@import url("../fonts/octin_sports_rg.ttf");*/
 body {
   font-family: "Poppins", sans-serif;
   color: #FFF;
@@ -290,7 +290,6 @@ section:nth-child(odd) {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  justify-content: center;
 }
 
 .slider_section .row {
@@ -302,6 +301,8 @@ section:nth-child(odd) {
 .slider_section #customCarousel {
   width: 100%;
   z-index: 3;
+  display:inline-flex;
+  justify-content: center;
 }
 
 .slider_section .detail-box {
@@ -396,7 +397,7 @@ section:nth-child(odd) {
 .slider_section .carousel-inner {
   background: #000;
   max-width: 1200px;
-  border-radius: 15;
+  border-radius: 15px;
 }
 
 .slider_section .container {
