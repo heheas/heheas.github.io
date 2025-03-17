@@ -389,7 +389,7 @@ section:nth-child(odd) {
 }
 
 .slider_section .carousel-indicators li {
-  background-color: #6bb7be;
+  background-color: #000;
   width: 12px;
   height: 12px;
   border-radius: 100%;
