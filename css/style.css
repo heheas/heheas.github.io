@@ -367,7 +367,8 @@ section:nth-child(odd) {
 }
 
 .slider_section .img-box img {
-  width: 100%;
+  max-width: 100%;
+  height: 100%;
 }
 
 .slider_section .img-box.pad {
