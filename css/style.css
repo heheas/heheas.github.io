@@ -370,6 +370,10 @@ section:nth-child(odd) {
   width: 100%;
 }
 
+.slider_section .img-box img .pad {
+  padding: 25px;
+}
+
 .slider_section .carousel-indicators {
   position: relative;
   margin: 0;
