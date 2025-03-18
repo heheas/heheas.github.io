@@ -312,6 +312,7 @@ section {
 /*end section styling*/
 
 /* slider section */
+
 .slider_section {
 }
 
@@ -432,6 +433,7 @@ section {
   border-radius: 15px;
   display: flex;
   height: 400px;
+  box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.3);
 }
 
 .slider_section .carousel-inner div {
@@ -448,6 +450,7 @@ section {
   width: 100%;
   max-width:1200px;
   align-items: stretch;
+  padding: 15px 0px;
 }
 
 .slider_section .selectors .flair {
