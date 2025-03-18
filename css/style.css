@@ -309,6 +309,10 @@ section {
   flex-direction: column;
 }
 
+.section_title {
+  font-size: larger !important;
+}
+
 /*end section styling*/
 
 /* slider section */
