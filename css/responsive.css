@@ -105,6 +105,15 @@
   .menuToggleExpand + .navMenuFull {
     display: inline-flex;
   }
+  
+  .slider_section #customCarousel {
+    padding: 0px 20px;
+  }
+  
+  .slider_section .carousel-inner {
+    max-width: 400px;
+    height: 200px;
+  }
 }
 
 @media (max-width: 768px) {
