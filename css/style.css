@@ -299,12 +299,6 @@ section {
   padding-top:50px;
   top: 30px;
   padding-bottom:30px;
-}
-
-/*end section styling*/
-
-/* slider section */
-.slider_section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,6 +307,12 @@ section {
           align-items: center;
   position: relative;
   flex-direction: column;
+}
+
+/*end section styling*/
+
+/* slider section */
+.slider_section {
 }
 
 .slider_section .row {
