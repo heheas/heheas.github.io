@@ -124,6 +124,13 @@
     padding-bottom: 75px;
   }
 
+  .slider_section .img-box {
+    overflow: hidden;
+    max-width: 80%;
+    display: flex;
+    margin: auto;
+  }
+
   .slider_section .detail_box {
     text-align: center;
     padding-left: 0;
