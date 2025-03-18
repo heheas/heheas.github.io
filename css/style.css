@@ -276,11 +276,11 @@ a:focus {
 /*end header section*/
 
 /* section styling */
-section:nth-child(odd), section:nth-child(odd) span.section_transition {
-  background-color: rgb(90,73,94);
-}
-section:nth-child(even) span.section_transition {
+section:nth-child(odd), section:nth-child(even) span.section_transition {
   background-color: #483A4B;
+}
+section:nth-child(odd) span.section_transition {
+  background-color: rgb(90,73,94);
 }
 
 section span.section_transition {
