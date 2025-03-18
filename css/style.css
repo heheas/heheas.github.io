@@ -290,12 +290,15 @@ section span.section_transition {
   -webkit-mask-image: url('../images/rocco/Mask.png');
   mask-image: url('../images/rocco/Mask.png');
   mask-repeat: no-repeat;
-    mask-size: 100% 30px;
+  mask-size: 100% 30px;
+  bottom: 0px;
+  position: absolute;
 }
 
 section {
-  padding-top:30px;
+  padding-top:50px;
   top: 30px;
+  padding-bottom:30px;
 }
 
 /*end section styling*/
