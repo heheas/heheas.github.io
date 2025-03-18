@@ -8,7 +8,6 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-size: xxx-large;
     color: #f89646;
     background-color: transparent;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
