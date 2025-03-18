@@ -296,9 +296,9 @@ section span.section_transition {
 }
 
 section {
-  padding-top:50px;
+  padding-top:40px;
   top: 30px;
-  padding-bottom:30px;
+  padding-bottom:60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
