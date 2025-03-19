@@ -319,8 +319,8 @@ section {
 
 /*end section styling*/
 
-/* slider section */
 
+/* slider section */
 .slider_section {
 }
 
@@ -526,6 +526,10 @@ section {
   color: #6bb7be;
   text-transform: uppercase;
   font-size: 15px;
+}
+
+.inline-img {
+  width: 30%;
 }
 
 .about_section {
