@@ -551,8 +551,9 @@ span.kickstarter_coming_soon {
     top: -14px;
 }
 
-.games_section .section_title:hover .s-hider {
+.flicker {
   opacity: 0.25;
+  color: #483A4B;
 }
 
 .about_section {
