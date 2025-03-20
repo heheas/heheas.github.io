@@ -10,8 +10,8 @@ getYear();
 let activeFlickerStatus = false;
 function flicker(elemID, timeout) {
     if (!activeFlickerStatus) {
-        if (elemID[0] != '.') {
-            elemID = '.' + elemID;
+        if (elemID[0] != '#') {
+            elemID = '#' + elemID;
         }
         console.log("start flicker");
         activeFlickerStatus = true;
