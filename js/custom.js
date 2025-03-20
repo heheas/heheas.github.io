@@ -8,6 +8,8 @@ function getYear() {
 getYear();
 
 let activeFlickerStatus = false;
+let initDecay = 3000;
+const decayRate = .10;
 function flicker(elemID, timeout) {
     if (!activeFlickerStatus) {
         if (elemID[0] != '#') {
@@ -15,14 +17,15 @@ function flicker(elemID, timeout) {
         }
         console.log("start flicker");
         activeFlickerStatus = true;
-        setTimeout(activeFlicker, timeout, elemID, timeout/2.8);
+        initDecay = timeout;
+        setTimeout(activeFlicker, timeout, elemID, flickerRate(timeout));
     }
 }
 function activeFlicker(elemID, timeout) {
     if (timeout > 10) {
         console.log("flicking: " + timeout);
         $(elemID).toggleClass('flicker');
-        setTimeout(activeFlicker, timeout, elemID, timeout/2.8);
+        setTimeout(activeFlicker, timeout, elemID, flickerRate(timeout));
     } else {
         $(elemID).addClass('flicker');
         console.log("end flicker");
@@ -31,6 +34,9 @@ function activeFlicker(elemID, timeout) {
             activeFlickerStatus = false;
         }, 30000);
     }
+}
+function flickerRate(rate) {
+    return initDecay * (1-decayRate)^rate;
 }
 
 function toggleMenu() {
