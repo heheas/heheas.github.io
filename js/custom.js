@@ -8,22 +8,25 @@ function getYear() {
 getYear();
 
 let activeFlickerStatus = false;
-function flicker(elem, timeout) {
+function flicker(elemID, timeout) {
     if (!activeFlickerStatus) {
+        if (elemID[0] != '.') {
+            elemID = '.' + elemID;
+        }
         console.log("start flicker");
         activeFlickerStatus = true;
-        activeFlicker(elem, timeout);
+        activeFlicker(elemID, timeout);
     }
 }
 function activeFlicker(elemID, timeout) {
     if (timeout > 100) {
         console.log("flicking: " + timeout);
-        $('.' + elemID).toggle('flicker');
-        setTimeout(activeFlicker(elemID, timeout/2), timeout);
+        $(elemID).toggle('flicker');
+        setTimeout(activeFlicker, timeout, elemID, timeout/2);
     } else {
-        $('.' + elemID).addClass('flicker');
+        $(elemID).addClass('flicker');
         console.log("end flicker");
-        setTimeout(() => {$('.' + elemID).removeClass('flicker'); activeFlickerStatus = false;}, 30000);
+        setTimeout(() => {$(elemID).removeClass('flicker'); activeFlickerStatus = false;}, 30000);
     }
 }
 
