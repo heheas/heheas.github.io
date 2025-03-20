@@ -437,7 +437,7 @@ section {
 
 .slider_section .carousel-inner {
   background: #000;
-  max-width: 1200px;
+  max-width: 900px;
   border-radius: 15px;
   display: flex;
   height: 400px;
@@ -456,7 +456,7 @@ section {
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width:1200px;
+  max-width:900px;
   align-items: stretch;
   padding: 15px 0px;
 }
