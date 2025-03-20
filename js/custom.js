@@ -37,7 +37,7 @@ function activeFlicker(elemID, timeout) {
     }
 }
 function flickerRate(rate) {
-    return rate/4;
+    return rate/1.5;
 }
 
 function toggleMenu() {
