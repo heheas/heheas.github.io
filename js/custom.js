@@ -7,8 +7,10 @@ function getYear() {
 
 getYear();
 
+let flickerInterval;
 let activeFlickerStatus = false;
 let initDecay = 3000;
+let decayPos = 0;
 const decayRate = .10;
 function flicker(elemID, timeout) {
     if (!activeFlickerStatus) {
@@ -25,10 +27,12 @@ function activeFlicker(elemID, timeout) {
     if (timeout > 10) {
         console.log("flicking: " + timeout);
         $(elemID).toggleClass('flicker');
+        flickerInterval = setInterval(() => { $(elemID).toggleClass('flicker'); }, );
         setTimeout(activeFlicker, timeout, elemID, flickerRate(timeout));
     } else {
         $(elemID).addClass('flicker');
         console.log("end flicker");
+        clearInterval(flickerInterval);
         setTimeout(() => {
             $(elemID).removeClass('flicker');
             activeFlickerStatus = false;
@@ -36,7 +40,7 @@ function activeFlicker(elemID, timeout) {
     }
 }
 function flickerRate(rate) {
-    return (initDecay * (1-decayRate)^(initDecay-rate));
+    return rate/2;
 }
 
 function toggleMenu() {
