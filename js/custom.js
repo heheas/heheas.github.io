@@ -7,15 +7,20 @@ function getYear() {
 
 getYear();
 
-function flicker(elem, timeout, active = false) {
-    if (!active) {
-        if (timeout > 100) {
-            $(elem).toggle('flicker');
-            setTimeout(ficker(elem, timeout/2, true), timeout);
-        } else {
-            $(elem).addClass('flicker')
-            setTimeout($(elem).removeClass('flicker'), 30000);
-        }
+let activeFlickerStatus = false;
+function flicker(elem, timeout) {
+    if (!activeFlickerStatus) {
+        activeFlickerStatus = true;
+        activeFlicker(elem, timeout);
+    }
+}
+function activeFlicker(elem, timeout) {
+    if (timeout > 100) {
+        $(elem).toggle('flicker');
+        setTimeout(activeFicker(elem, timeout/2), timeout);
+    } else {
+        $(elem).addClass('flicker')
+        setTimeout(() => {$(elem).removeClass('flicker'); activeFlickerStatus = false;}, 30000);
     }
 }
 
