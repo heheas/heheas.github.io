@@ -551,6 +551,10 @@ span.kickstarter_coming_soon {
     top: -14px;
 }
 
+.games_section:hover .s-hider {
+  display: hidden;
+}
+
 .about_section {
   background-color: #f9fafa;
 }
