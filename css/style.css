@@ -539,14 +539,16 @@ section {
 }
 
 .inline-img {
-  position:relative;
+  width:100%;
 }
 
 span.kickstarter_coming_soon {
     display: flex;
     position: absolute;
-    height: 150px;
-    transform: rotate(-25deg);
+    height: 40%;
+    transform: rotate(25deg);
+    right: -58px;
+    top: -14px;
 }
 .about_section {
   background-color: #f9fafa;
