@@ -10,16 +10,19 @@ getYear();
 let activeFlickerStatus = false;
 function flicker(elem, timeout) {
     if (!activeFlickerStatus) {
+        console.log("start flicker");
         activeFlickerStatus = true;
         activeFlicker(elem, timeout);
     }
 }
 function activeFlicker(elem, timeout) {
     if (timeout > 100) {
+        console.log("flicking: " + timeout);
         $(elem).toggle('flicker');
         setTimeout(activeFicker(elem, timeout/2), timeout);
     } else {
-        $(elem).addClass('flicker')
+        $(elem).addClass('flicker');
+        console.log("end flicker");
         setTimeout(() => {$(elem).removeClass('flicker'); activeFlickerStatus = false;}, 30000);
     }
 }
