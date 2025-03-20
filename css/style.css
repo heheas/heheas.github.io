@@ -542,7 +542,7 @@ section {
   width:100%;
 }
 
-.kickstarter:hover span.kickstarter_coming_soon {
+.kickstarter:hover .kickstarter_coming_soon, .kickstarter_coming_soon:hover {
   display:none;
 }
 
