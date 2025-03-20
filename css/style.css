@@ -550,6 +550,11 @@ span.kickstarter_coming_soon {
     right: -58px;
     top: -14px;
 }
+
+span.kickstarter_coming_soon:hover {
+  display: none;
+}
+
 .about_section {
   background-color: #f9fafa;
 }
