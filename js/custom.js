@@ -15,15 +15,15 @@ function flicker(elem, timeout) {
         activeFlicker(elem, timeout);
     }
 }
-function activeFlicker(elem, timeout) {
+function activeFlicker(elemID, timeout) {
     if (timeout > 100) {
         console.log("flicking: " + timeout);
-        $(elem).toggle('flicker');
+        $('.' + elemID).toggle('flicker');
         setTimeout(activeFlicker(elem, timeout/2), timeout);
     } else {
-        $(elem).addClass('flicker');
+        $('.' + elemID).addClass('flicker');
         console.log("end flicker");
-        setTimeout(() => {$(elem).removeClass('flicker'); activeFlickerStatus = false;}, 30000);
+        setTimeout(() => {$('.' + elemID).removeClass('flicker'); activeFlickerStatus = false;}, 30000);
     }
 }
 
