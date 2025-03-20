@@ -542,6 +542,10 @@ section {
   width:100%;
 }
 
+.kickstarter:hover span.kickstarter_coming_soon {
+  display:none;
+}
+
 span.kickstarter_coming_soon {
     display: flex;
     position: absolute;
@@ -549,10 +553,6 @@ span.kickstarter_coming_soon {
     transform: rotate(25deg);
     right: -58px;
     top: -14px;
-}
-
-span.kickstarter_coming_soon:hover {
-  display: none;
 }
 
 .about_section {
