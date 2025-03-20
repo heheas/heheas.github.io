@@ -19,7 +19,7 @@ function activeFlicker(elem, timeout) {
     if (timeout > 100) {
         console.log("flicking: " + timeout);
         $(elem).toggle('flicker');
-        setTimeout(activeFicker(elem, timeout/2), timeout);
+        setTimeout(activeFlicker(elem, timeout/2), timeout);
     } else {
         $(elem).addClass('flicker');
         console.log("end flicker");
