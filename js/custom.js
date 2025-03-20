@@ -7,6 +7,18 @@ function getYear() {
 
 getYear();
 
+function flicker(elem, timeout, active = false) {
+    if (!active) {
+        if (timeout > 100) {
+            $(elem).toggle('flicker');
+            setTimeout(ficker(elem, timeout/2, true), timeout);
+        } else {
+            $(elem).addClass('flicker')
+            setTimeout($(elem).removeClass('flicker'), 30000);
+        }
+    }
+}
+
 function toggleMenu() {
     let ariaExpanded = $('.navbar-toggler').attr('aria-expanded') === "true";
     $('.navbar-toggler').attr('aria-expanded', !ariaExpanded);
