@@ -552,7 +552,7 @@ span.kickstarter_coming_soon {
 }
 
 .games_section:hover .s-hider {
-  display: hidden;
+  opacity: 0.25;
 }
 
 .about_section {
