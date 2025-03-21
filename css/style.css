@@ -529,7 +529,7 @@ section {
 }
 
 .kickstarter {
-  width: 30%;
+  width: 600px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -545,10 +545,10 @@ section {
 span.kickstarter_coming_soon {
     display: flex;
     position: absolute;
-    height: 40%;
+    height: 75px;
     transform: rotate(25deg);
-    right: -58px;
-    top: -14px;
+    right: -40px;
+    top: -10px;
 }
 
 .flicker {
