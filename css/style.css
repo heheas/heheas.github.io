@@ -545,9 +545,9 @@ section {
 span.kickstarter_coming_soon {
     display: flex;
     position: absolute;
-    height: 75px;
+    height: 125px;
     transform: rotate(25deg);
-    right: -40px;
+    right: -55px;
     top: -10px;
 }
 
