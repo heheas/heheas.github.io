@@ -547,8 +547,8 @@ span.kickstarter_coming_soon {
     position: absolute;
     height: 125px;
     transform: rotate(25deg);
-    right: -55px;
-    top: -10px;
+    right: -75px;
+    top: -30px;
 }
 
 .flicker {
