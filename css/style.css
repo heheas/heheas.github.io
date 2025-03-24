@@ -538,6 +538,12 @@ section {
   position:relative;
 }
 
+.kickstarter-vid {
+  width: 100%;
+  display: inline-flex;
+  align-content: center;
+}
+
 .inline-img {
   width:100%;
 }
