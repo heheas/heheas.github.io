@@ -542,6 +542,12 @@ section {
   width: 100%;
   display: inline-flex;
   align-content: center;
+  align-items:center;
+}
+
+.kickstarter-vid iframe {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .inline-img {
