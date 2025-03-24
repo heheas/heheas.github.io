@@ -561,16 +561,16 @@ p.pitch {
 }
 
 .rocco-link {
-  display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .rocco-link-back {
   font-size: 150px;
   text-shadow: -5px -5px 1px black, 5px 5px 1px black, -5px 5px 1px black, 5px -5px 1px black, 0px -7.75px 1px black, 0px 7.75px 1px black;
+  margin-left: auto;
+  margin-right: auto;
+  color: #483A4B;
 }
 
 .flicker {
