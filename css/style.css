@@ -8,7 +8,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: #f89646;
+    color: #e9ba4e;
     background-color: transparent;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-weight: bolder;
@@ -369,17 +369,17 @@ section {
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #f89646;
+  background-color: #e9ba4e;
   color: #ffffff;
   border-radius: 0;
-  border: 1px solid #f89646;
+  border: 1px solid #e9ba4e;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .slider_section .detail-box .btn-box .btn1:hover {
   background-color: transparent;
-  color: #f89646;
+  color: #e9ba4e;
 }
 
 .slider_section .detail-box .btn-box .btn2 {
@@ -432,7 +432,7 @@ section {
 .slider_section .carousel-indicators li.active {
   width: 17px;
   height: 17px;
-  background-color: #f89646;
+  background-color: #e9ba4e;
 }
 
 .slider_section .carousel-inner {
@@ -561,7 +561,7 @@ p.pitch {
 }
 
 .rocco-link {
-  display: flex;
+  display: block;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -570,7 +570,7 @@ p.pitch {
 
 .rocco-link-back {
   font-size: 150px;
-  font-shadow: -5px -5px 1px black, 5px 5px 1px black, -5px 5px 1px black, 5px -5px 1px black, 0px -7.75px 1px black, 0px 7.75px 1px black;
+  text-shadow: -5px -5px 1px black, 5px 5px 1px black, -5px 5px 1px black, 5px -5px 1px black, 0px -7.75px 1px black, 0px 7.75px 1px black;
 }
 
 .flicker {
