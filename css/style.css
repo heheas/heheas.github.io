@@ -551,6 +551,13 @@ span.kickstarter_coming_soon {
     top: -30px;
 }
 
+.kickstarter p .pitch {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 0px;
+}
+
 .flicker {
   color: #483A4B;
 }
