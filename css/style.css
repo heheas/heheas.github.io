@@ -595,6 +595,10 @@ p.pitch {
   text-align: center;
 }
 
+.rocco-link-anchor-wrapper a {
+  color: #FFF;
+}
+
 .flicker {
   color: #483A4B;
 }
