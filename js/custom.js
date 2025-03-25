@@ -12,7 +12,7 @@ window.load = function () {
         }
     };
     console.log("COOKIES: " + JSON.stringify(cookies) );
-    if (cookies['nowelcome'] != 'true') {
+    if (cookies.get('nowelcome') != 'true') {
         console.log("DISPLAY MODAL");
         displayModal();
     }
