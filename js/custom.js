@@ -1,7 +1,18 @@
 var cookies = new Map();
 window.load = function () {
+    loadCookies();
+    
+    console.log("COOKIES: " + JSON.stringify(cookies) );
+    if (cookies.get('nowelcome') != 'true') {
+        console.log("DISPLAY MODAL");
+        displayModal();
+    }
+}
+
+function loadCookies() {
     console.log("load cookies");
     var cookieSet = document.cookies.split(';');
+    
     console.log("split cookies");
     cookieSet.forEach( (cookie) => {
         console.log("cookie 1: " + cookie);
@@ -11,11 +22,6 @@ window.load = function () {
             cookies.set(cookieKeyValue[0], cookieKeyValue[1]);
         }
     };
-    console.log("COOKIES: " + JSON.stringify(cookies) );
-    if (cookies.get('nowelcome') != 'true') {
-        console.log("DISPLAY MODAL");
-        displayModal();
-    }
 }
 
 // to get current year
