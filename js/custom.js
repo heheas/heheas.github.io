@@ -6,7 +6,7 @@ window.load = function () {
     cookieSet.forEach((cookie) => {
         
     console.log("cookie 1: " + cookie);
-        if (cookie.contains('=') {
+        if (cookie.contains('=')) {
             
             cookieKeyValue = cookie.split('=');
     console.log("split cookie data: " + JSON.stringify(cookieKeyValue));
