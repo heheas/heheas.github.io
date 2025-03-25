@@ -11,7 +11,7 @@ window.load = function () {
 
 function loadCookies() {
     console.log("load cookies");
-    var cookieSet = document.cookies.split(';');
+    var cookieSet = document.cookie.split(';');
     
     console.log("split cookies");
     cookieSet.forEach( (cookie) => {
