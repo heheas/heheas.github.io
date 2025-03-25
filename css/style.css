@@ -540,17 +540,12 @@ section {
 }
 
 .kickstarter-vid {
-  width: 100%;
-  display: inline-flex;
-  align-content: center;
   align-items:center;
-  flex-direction: column;
   padding-top: 20px;
 }
 
 .kickstarter-vid iframe {
-  margin-left: auto;
-  margin-right: auto;
+  width:100%;
 }
 
 .inline-img {
@@ -562,8 +557,8 @@ span.kickstarter_coming_soon {
     position: absolute;
     height: 30%;
     transform: rotate(25deg);
-    right: 4%;
-    top: 4%;
+    right: 15px;
+    top: -5px;
 }
 
 p.pitch {
