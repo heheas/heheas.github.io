@@ -1,13 +1,21 @@
 var cookies = new Map();
 window.load = function () {
+    console.log("load cookies");
     var cookieSet = document.cookies.split(';');
+    console.log("split cookies");
     cookieSet.forEach((cookie) => {
+        
+    console.log("cookie 1: " + cookie);
         if (cookie.contains('=') {
+            
             cookieKeyValue = cookie.split('=');
+    console.log("split cookie data: " + JSON.stringify(cookieKeyValue));
             cookies.set(cookieKeyValue[0], cookieKeyValue[1]);
         }
     }
+    console.log("COOKIES: "+JSON.stringify(cookies));
     if (cookies['nowelcome'] != 'true') {
+        console.log("DISPLAY MODAL");
         displayModal();
     }
 }
@@ -22,6 +30,7 @@ function getYear() {
 getYear();
 
 function displayModal() {
+        console.log("....yeah I suppose so");
     $('dialog').show();
 }
 
