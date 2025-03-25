@@ -13,7 +13,7 @@ window.load = function () {
             cookies.set(cookieKeyValue[0], cookieKeyValue[1]);
         }
     }
-    console.log("COOKIES: "+JSON.stringify(cookies));
+    console.log("COOKIES: " + JSON.stringify(cookies) );
     if (cookies['nowelcome'] != 'true') {
         console.log("DISPLAY MODAL");
         displayModal();
