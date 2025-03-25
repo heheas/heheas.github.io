@@ -4,12 +4,10 @@ window.load = function () {
     var cookieSet = document.cookies.split(';');
     console.log("split cookies");
     cookieSet.forEach( (cookie) => {
-        
-    console.log("cookie 1: " + cookie);
-        if (cookie.contains('=')) {
-            
-            cookieKeyValue = cookie.split('=');
-    console.log("split cookie data: " + JSON.stringify(cookieKeyValue));
+        console.log("cookie 1: " + cookie);
+        if ( cookie.includes('=') ) {
+            var cookieKeyValue = cookie.split('=');
+            console.log("split cookie data: " + JSON.stringify(cookieKeyValue));
             cookies.set(cookieKeyValue[0], cookieKeyValue[1]);
         }
     };
