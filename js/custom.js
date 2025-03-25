@@ -1,3 +1,17 @@
+var cookies = new Map();
+window.load = function () {
+    var cookieSet = document.cookies.split(';');
+    cookieSet.forEach((cookie) => {
+        if (cookie.contains('=') {
+            cookieKeyValue = cookie.split('=');
+            cookies.set(cookieKeyValue[0], cookieKeyValue[1]);
+        }
+    }
+    if (cookies['nowelcome'] != 'true') {
+        displayModal();
+    }
+}
+
 // to get current year
 function getYear() {
     var currentDate = new Date();
@@ -6,6 +20,10 @@ function getYear() {
 }
 
 getYear();
+
+function displayModal() {
+    $('dialog').show();
+}
 
 let activeFlickerStatus = false;
 function flicker(elemID, timeout) {
