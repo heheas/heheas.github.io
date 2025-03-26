@@ -316,9 +316,8 @@ dialog {
 }
 
 .dialog_footer {
-  background: red;
-  width:100%;
-  height: 100px;
+  display:flex;
+  flex-direction: row-reverse;
 }
 
 .dialog_exit {
