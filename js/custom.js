@@ -11,10 +11,11 @@ window.onload = function () {
 
 function loadCookies() {
     console.log("load cookies");
-    var cookieSet = document.cookie.split(';');
+    var cookieSet = [];
+    cookieSet = document.cookie.split(';');
     
     console.log("split cookies: " + JSON.stringify(cookieSet));
-    if (cookieSet) {
+    if (cookieSet.length) {
         cookieSet.forEach( (cookie) => {
             console.log("cookie 1: " + cookie);
             if ( cookie.includes('=') ) {
