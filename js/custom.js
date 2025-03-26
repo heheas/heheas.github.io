@@ -20,6 +20,23 @@ function loadCookies() {
     }
 }
 
+function setCookie(key, value) {
+    cookies.set(key, value);
+    updateCookies();
+}
+function deleteCookie(key) {
+    cookies.delete(key);
+    updateCookies();
+}
+
+function updateCookies() {
+     var cookieString = "";
+      cookies.forEach((value, key) => {
+      cookieString += `${key}=${value};`;
+    });
+    document.cookie = cookieString;
+}
+
 // to get current year
 /*function getYear() {
     var currentDate = new Date();
@@ -33,6 +50,10 @@ function showModal() {
     $('dialog').show();
 }
 function hideModal() {
+    $('dialog').hide();
+}
+function dontShowAgain() {
+    setCookie(nowelcome, true);
     $('dialog').hide();
 }
 
