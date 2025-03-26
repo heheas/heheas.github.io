@@ -18,12 +18,12 @@ function loadCookies() {
     if (cookieSet && cookieSet.length) {
       cookieSet.forEach( (cookie) => {
             console.log("cookie 1: " + cookie);
-             /* if ( cookie.includes('=') ) {
+             if ( cookie.includes('=') ) {
                 var cookieKeyValue = cookie.split('=');
                 console.log("split cookie data: " + JSON.stringify(cookieKeyValue));
                 cookies.set(cookieKeyValue[0], cookieKeyValue[1]);
-            }*/
-        };
+            }
+        });
     }
 }
 
