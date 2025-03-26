@@ -14,14 +14,14 @@ function loadCookies() {
     var cookieSet = document.cookie.split(';');
     
     console.log("split cookies: " + JSON.stringify(cookieSet));
-    /*cookieSet.forEach( (cookie) => {
+    cookieSet.forEach( (cookie) => {
         console.log("cookie 1: " + cookie);
         if ( cookie.includes('=') ) {
             var cookieKeyValue = cookie.split('=');
             console.log("split cookie data: " + JSON.stringify(cookieKeyValue));
             cookies.set(cookieKeyValue[0], cookieKeyValue[1]);
         }
-    };*/
+    };
 }
 
 // to get current year
