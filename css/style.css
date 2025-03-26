@@ -312,6 +312,13 @@ dialog {
     border-radius: 15px;
     padding: 25px;
 }
+
+.dialog_exit {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
 /* end Modal Section */
 
 
