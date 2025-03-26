@@ -29,9 +29,8 @@ function loadCookies() {
 
 getYear();*/
 
-function displayModal() {
-        console.log("....yeah I suppose so");
-    $('dialog').show();
+function toggleModal() {
+    $('dialog').toggle();
 }
 
 let activeFlickerStatus = false;
