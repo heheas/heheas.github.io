@@ -1,5 +1,5 @@
 var cookies = new Map();
-window.load = function () {
+window.onload = function () {
     loadCookies();
     
     console.log("COOKIES: " + JSON.stringify(cookies) );
