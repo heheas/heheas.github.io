@@ -53,7 +53,7 @@ function hideModal() {
     $('dialog').hide();
 }
 function dontShowAgain() {
-    setCookie(nowelcome, true);
+    setCookie("nowelcome", true);
     $('dialog').hide();
 }
 
