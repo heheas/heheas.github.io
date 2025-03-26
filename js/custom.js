@@ -3,7 +3,7 @@ window.onload = function () {
     loadCookies();
     
     if (cookies.get('nowelcome') != 'true') {
-        displayModal();
+        showModal();
     }
 }
 
@@ -29,8 +29,11 @@ function loadCookies() {
 
 getYear();*/
 
-function toggleModal() {
-    $('dialog').toggle();
+function showModal() {
+    $('dialog').show();
+}
+function hideModal() {
+    $('dialog').hide();
 }
 
 let activeFlickerStatus = false;
