@@ -28,13 +28,13 @@ function loadCookies() {
 }
 
 // to get current year
-function getYear() {
+/*function getYear() {
     var currentDate = new Date();
     var currentYear = currentDate.getFullYear();
     document.querySelector("#displayYear").innerHTML = currentYear;
 }
 
-getYear();
+getYear();*/
 
 function displayModal() {
         console.log("....yeah I suppose so");
