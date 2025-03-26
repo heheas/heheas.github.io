@@ -279,6 +279,42 @@ a:focus {
 
 /*end header section*/
 
+/* Modal Section */
+dialog {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    border: none;
+}
+
+.dialog_back {
+    background: rgba(10, 10, 10, 0.75);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 997;
+}
+
+.dialog_main {
+    background: white;
+    width: 75%;
+    height: 75%;
+    display: block;
+    top: 12.5%;
+    left: 12.5%;
+    position: fixed;
+    z-index: 999;
+    border-radius: 15px;
+    padding: 25px;
+}
+/* end Modal Section */
+
+
 /* section styling */
 section:nth-child(odd), section:nth-child(even) span.section_transition {
   background-color: #483A4B;
