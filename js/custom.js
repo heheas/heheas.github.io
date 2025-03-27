@@ -4,10 +4,6 @@ window.onload = function () {
     if (noWelcome != 'true') {
         showModal();
     }
-    
-    $('.carousel').carousel({
-      interval: 2000
-    });
 }
 
 function createCookie(name, value, days) {
