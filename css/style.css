@@ -303,10 +303,10 @@ dialog {
 .dialog_main {
     background: white;
     width: 75%;
-    top: 0;
-    left: 0;
-    transform: translate(12.5%, 50%);
-    -webkit-transform: translateY(12.5%, 50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -50%);
+    -webkit-transform: translateY(50%, -50%);
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
