@@ -337,7 +337,9 @@ dialog {
 }
 
 .dialog_content iframe {
-  width:100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    width: 100%;
 }
 /* end Modal Section */
 
@@ -609,7 +611,9 @@ section {
 }
 
 .kickstarter-vid iframe {
-  width:100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    width: 100%;
 }
 
 .inline-img {
