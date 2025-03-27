@@ -317,6 +317,15 @@ dialog {
     padding: 25px;
 }
 
+.dialog_main .btn-primary {
+    border-color: black;
+    background: #e9ba4e;
+}
+
+.dialog_main .btn-primary:hover {
+    background: #dbb660;
+}
+
 .dialog_footer {
   display:flex;
   flex-direction: row-reverse;
