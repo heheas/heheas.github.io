@@ -659,6 +659,10 @@ p.pitch {
   align-items: center;
 }
 
+.rocco-link h3 {
+  margin: 0 !important;
+}
+
 .rocco-link-back {
   font-size: 150px;
   text-shadow: -5px -5px 1px black, 5px 5px 1px black, -5px 5px 1px black, 5px -5px 1px black, 0px -7.75px 1px black, 0px 7.75px 1px black;
