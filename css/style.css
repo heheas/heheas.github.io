@@ -685,7 +685,7 @@ p.pitch {
   color: #483A4B;
 }
 
-.about_section {
+.about_section .container {
   background-color: #f9fafa;
 }
 
