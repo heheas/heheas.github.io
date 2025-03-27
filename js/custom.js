@@ -55,7 +55,7 @@ function hideModal() {
     $('dialog').hide();
 }
 function dontShowAgain() {
-    createCookie("nowelcome", true, -1);
+    createCookie("nowelcome", true, 400);
     $('dialog').hide();
 }
 
