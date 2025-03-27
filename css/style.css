@@ -348,7 +348,7 @@ dialog {
 .dialog_content {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
 .dialog_content iframe {
