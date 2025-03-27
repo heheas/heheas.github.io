@@ -393,7 +393,7 @@ section {
           align-items: center;
 }
 
-.slider_section #customCarousel {
+.slider_section #carousel {
   width: 100%;
   z-index: 3;
   display:inline-flex;
