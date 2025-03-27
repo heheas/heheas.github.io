@@ -117,16 +117,7 @@ function toggleMenu() {
 }
 
 function closeMenu() {
-    $('.navbar-toggler svg').addClass('fa-bars').removeClass('fa-xmark');
     $('.navbar-collapse').removeClass('menuToggleExpand');
-    $('body').removeClass('no-scroll');
-    $('.nav-social').insertBefore('.navbar-menu');
-    let ariaExpanded = $('.navbar-toggler').attr('aria-expanded') === "true";
-    if (!ariaExpanded) {
-        $('.nav-social').appendTo('.navbar-collapse');
-    } else {
-        $('.nav-social').insertBefore('.navbar-menu');
-    }
 }
 
 /*
