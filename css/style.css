@@ -303,12 +303,13 @@ dialog {
 .dialog_main {
     background: white;
     width: 75%;
-    height: 75%;
+    top: 0;
+    left: 0;
+    transform: translate(12.5%, 50%);
+    -webkit-transform: translateY(12.5%, 50%);
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-    top: 12.5%;
-    left: 12.5%;
     position: fixed;
     z-index: 999;
     border-radius: 15px;
