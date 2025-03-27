@@ -1,6 +1,7 @@
 window.onload = function () {
-    
-    if (getCookie('nowelcome') != 'true') {
+
+    let noWelcome = getCookie('nowelcome');
+    if (noWelcome != 'true') {
         showModal();
     }
 }
