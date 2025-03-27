@@ -1,62 +1,37 @@
-var cookies = new Map();
 window.onload = function () {
-    loadCookies();
     
-    if (cookies.get('nowelcome') != 'true') {
+    if (getCookie('nowelcome') != 'true') {
         showModal();
     }
 }
 
-function loadCookies() {
-    var cookieSet = [];
-    cookieSet = document.cookie.split(';');
-    if (cookieSet && cookieSet.length) {
-      cookieSet.forEach( (cookie) => {
-             if ( cookie.includes('=') ) {
-                var cookieKeyValue = cookie.split('=');
-                cookies.set(cookieKeyValue[0], cookieKeyValue[1]);
-            }
-        });
-    }
-}
-
-function setCookie(key, value) {
-    cookies.set(key, value);
-    updateCookies();
-}
-function deleteCookie(key) {
-    cookies.delete(key);
-    updateCookies();
-}
-
-function updateCookies() {
-     var cookieString = "";
-      cookies.forEach((value, key) => {
-      cookieString += `${key}=${value};`;
-    });
-    document.cookie = cookieString;
-}
-
 /* New Cookie Code */
-function createCookie(name,value,days) {
+function createCookie(name, value, days) {
+    var expires;
     if (days) {
         var date = new Date();
-        date.setTime(date.getTime()+(days*24*60*60*1000));
-        var expires = "; expires="+date.toGMTString();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
     }
-    else var expires = "";
-    document.cookie = name+"="+value+expires+"; path=/";
+    else {
+        expires = "";
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
 }
 
-function readCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+function getCookie(c_name) {
+    if (document.cookie.length > 0) {
+        c_start = document.cookie.indexOf(c_name + "=");
+        if (c_start != -1) {
+            c_start = c_start + c_name.length + 1;
+            c_end = document.cookie.indexOf(";", c_start);
+            if (c_end == -1) {
+                c_end = document.cookie.length;
+            }
+            return unescape(document.cookie.substring(c_start, c_end));
+        }
     }
-    return null;
+    return "";
 }
 
 function eraseCookie(name) {
@@ -79,7 +54,7 @@ function hideModal() {
     $('dialog').hide();
 }
 function dontShowAgain() {
-    setCookie("nowelcome", true);
+    createCookie("nowelcome", true, -1);
     $('dialog').hide();
 }
 
