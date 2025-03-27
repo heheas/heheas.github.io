@@ -302,7 +302,7 @@ dialog {
 
 .dialog_main {
     background: white;
-    width: 75%;
+    min-width: 60%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -327,6 +327,11 @@ dialog {
     top: 25px;
     right: 25px;
     cursor: pointer;
+}
+
+.dialog_content {
+  display: flex;
+  justify-content: center;
 }
 /* end Modal Section */
 
