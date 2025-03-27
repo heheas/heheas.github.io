@@ -15,8 +15,9 @@ h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
 }
 
-.layout_padding {
-  padding: 90px 0;
+.layout_padding { */
+    padding-top: 35px;
+    padding-bottom: 100px;
 }
 
 .layout_padding2 {
