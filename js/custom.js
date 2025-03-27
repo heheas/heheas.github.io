@@ -97,7 +97,7 @@ function toggleMenu() {
         $('.nav-social').insertBefore('.navbar-menu');
     }
 }
-
+/*
 $('.custom_slick_slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -121,4 +121,4 @@ $('.slick_slider_nav').slick({
     focusOnSelect: true,
     variableWidth: true
 });
-
+*/
