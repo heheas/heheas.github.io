@@ -691,8 +691,8 @@ p.pitch {
 }
 
 .about_section .about_back img{
-      -webkit-mask-image:-webkit-gradient(linear, rgba(0, 0, 0, 1) 50%, rgba(0,0,0,.2) 70%, rgba(0, 0, 0, 0) 100%);
-      mask-image: linear-gradient(rgba(0, 0, 0, 1) 50%, rgba(0,0,0,.2) 70%, rgba(0, 0, 0, 0) 100%);
+      -webkit-mask-image:-webkit-gradient(linear, rgba(0, 0, 0, 1) 50%, rgba(0,0,0,.2) 70%, rgba(0, 0, 0, 0) 80%);
+      mask-image: linear-gradient(rgba(0, 0, 0, 1) 50%, rgba(0,0,0,.2) 70%, rgba(0, 0, 0, 0) 80%);
     width:100%;
   border-radius: 5px;
 }
