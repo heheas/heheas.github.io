@@ -6,7 +6,6 @@ window.onload = function () {
     }
 }
 
-/* New Cookie Code */
 function createCookie(name, value, days) {
     var expires;
     if (days) {
@@ -98,7 +97,7 @@ function toggleMenu() {
         $('.nav-social').insertBefore('.navbar-menu');
     }
 }
-/*
+
 $('.custom_slick_slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -122,13 +121,4 @@ $('.slick_slider_nav').slick({
     focusOnSelect: true,
     variableWidth: true
 });
-*/
-/** google_map js **/
 
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
