@@ -5,7 +5,7 @@ window.onload = function () {
         showModal();
     }
     
-    $('.customCarousel').carousel({
+    $('.carousel').carousel({
       interval: 2000
     });
 }
