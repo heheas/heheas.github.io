@@ -708,12 +708,14 @@
   <!-- footer section -->
   
 <!-- pop-up dialog box, containing a form -->
-<dialog id="gooberlog">
+<dialog id="gooberlog" style="display: none;">
   <div class="dialog_back" onclick="hideModal()"></div>
   <div class="dialog_main">
     <div class="dialog_exit" onclick="hideModal()"><i class="fa-solid fa-xmark fa-xl"></i></div>
     <h2 id="dialogTitle">Welcome, to Goober Gobber Games!</h2>
-    <div id="dialogContent" class="dialog_content"></div>
+    <div id="dialogContent" class="dialog_content">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/vy0FaSU5X7Q?si=W5CupYbuL3CtGE0z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <div id="dialogFooter" class="dialog_footer"><button type="button" class="btn btn-primary" onclick="dontShowAgain()">Don't show me this again</button></div>
   </div>
 </dialog>
