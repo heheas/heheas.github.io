@@ -322,6 +322,12 @@ dialog {
   flex-direction: row-reverse;
 }
 
+.dialog_title {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
 .dialog_exit {
     display: block;
     position: absolute;
