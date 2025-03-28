@@ -400,6 +400,10 @@ section {
   margin-bottom: 20px;
 }
 
+h3.section_title {
+  font-size: 2.5rem;
+}
+
 /*end section styling*/
 
 
@@ -907,6 +911,11 @@ p.pitch {
   background-color: #f9fafa;
   padding-top: 75px;
   padding-bottom: 75px;
+}
+
+.contact_section .row, .contact_section .row div {
+  display: flex;
+  justify-content: center;
 }
 
 .contact_section .heading_container {
