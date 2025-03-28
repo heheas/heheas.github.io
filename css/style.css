@@ -714,6 +714,10 @@ p.pitch {
   border-radius: 5px;
 }
 
+.about_pic: {
+  width: 100%;
+}
+
 .about_section .detail-box p {
   margin-top: 10px;
   margin-bottom: 35px;
