@@ -689,8 +689,8 @@ p.pitch {
 }
 
 .about_back {
-  width:75%;
-  margin-bottom: -20%;
+  width: 100%;
+  margin-bottom: -25%;
 }
 
 .about_section .about_back img{
@@ -706,8 +706,13 @@ p.pitch {
           align-items: center;
 }
 
-.about_section .img-box {
-  padding: 20px;
+.about_section .img-box {  
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  padding: 15%;
 }
 
 .about_section .img-box img {
@@ -716,6 +721,7 @@ p.pitch {
 
 .about_pic {
   width: 100%;
+  display: flex;
 }
 
 .about_section .detail-box p {
@@ -743,8 +749,8 @@ p.pitch {
     width: 20%;
     height: 20%;
     position: absolute;
-    left: 12%;
-    bottom: 12%;
+    left: 10%;
+    bottom: 10%;
 }
 
 .blog_section .heading_container {
