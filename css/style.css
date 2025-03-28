@@ -304,7 +304,6 @@ dialog {
 
 .dialog_main {
     background: white;
-    width: 75%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -336,6 +335,7 @@ dialog {
     font-size: 2em;
     display: flex;
     justify-content: center;
+    margin-right: 25px;
 }
 
 .dialog_exit {
@@ -356,6 +356,7 @@ dialog {
     aspect-ratio: 16 / 9;
     height: auto;
     width: 100%;
+    max-width: 900px;
 }
 /* end Modal Section */
 
