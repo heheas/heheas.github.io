@@ -388,7 +388,6 @@ dialog {
 #pdf_viewer.collapsed {
   background:none;
   translate: 0 -100%;
-  height: 0;
 }
 
 
