@@ -366,19 +366,21 @@ dialog {
   align-content: center;
   display: flex;
   flex-direction: column;
+  width:80%;
+  aspect-ratio: 10/9.25;
 }
 
 #instructions_viewer {
   overflow: hidden;
+  height: calc(;
   
   transition-property: height;
   transition-duration: 2s;
   transition-timing-function: ease;
-  height:100%;
 }
 
 #instructions_viewer.collapsed {
-  height:0%;
+  height:0;
 }
 
 #pdf_viewer {  
@@ -386,7 +388,6 @@ dialog {
   background: rgb(25,25,25);  
   width: 80%;
   height: 100%;
-  aspect-ratio: 10/9.25;
   /*translate: 0 0;*/
 }
 
