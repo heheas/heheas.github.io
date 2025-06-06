@@ -383,16 +383,16 @@ dialog {
   aspect-ratio: 10/9.25;
   width: 80%;
   height: 100%;
-  translate: 0 0;
+  transform: translate(0 0);
   
-  transition-property: translate, background;
+  transition-property: transform, background;
   transition-duration: 2s;
   transition-timing-function: ease;
 }
 
 #pdf_viewer.collapse {
   background: unset;
-  translate: 0 -100%;
+  transform: translate(0 -100%);
 }
 
 
