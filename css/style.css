@@ -361,17 +361,15 @@ dialog {
 /* end Modal Section */
 
 /* Instructions CSS */
-@keyframes instructions_animation {
-  from {
-    translate: 0 -100%;
-  }
 
-  to {
-    translate: 0 0;
-  }
-}
 #instructions_viewer {
   overflow: hidden;
+}
+
+#pdf_viewer {
+  transition-property: translate;
+  transition-duration: 2s;
+  translate: 0 0;
 }
 #pdf_viewer.collapsed {
   transition-property: translate;
