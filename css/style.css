@@ -372,7 +372,10 @@ dialog {
   overflow: hidden;
 }
 
-#pdf_viewer {
+#pdf_viewer {  
+  padding: 15px;
+  background: rgb(25,25,25);
+  
   transition-property: translate;
   transition-duration: 2s;
   translate: 0 0;
