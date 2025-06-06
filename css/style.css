@@ -379,16 +379,18 @@ dialog {
   aspect-ratio: 10/9.25;
   translate: 0 0;
 
-  transition: all 2s ease;
   transition-property: translate, background;
+  transition-duration: 2s;
+  transition-function: ease;
 }
 
 #pdf_viewer.collapsed {
   background:none;
   translate: 0 -100%;
   
-  transition: all 2s ease;
   transition-property: translate, background;
+  transition-duration: 2s;
+  transition-function: ease;
 }
 
 
