@@ -121,7 +121,7 @@ function closeMenu() {
 }
 
 function toggleInstructions() {
-    $('.instructions_viewer').toggleClass('collapsed');
+    $('#instructions_viewer').toggleClass('collapsed');
 }
 
 /*
