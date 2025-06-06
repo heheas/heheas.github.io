@@ -1,9 +1,6 @@
 @media (max-width: 1300px) {}
 
 @media (max-width: 1120px) {
-  #instructions_viewer.collapsed {
-    height: calc((960px - 45px)*.8) !important;
-  }
 }
 
 @media (max-width: 992px) {
@@ -268,5 +265,8 @@
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
+  }
+  #instructions_viewer.collapsed {
+    height: calc((1170px - 45px)*.8) !important;
   }
 }
