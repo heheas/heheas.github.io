@@ -374,7 +374,9 @@ dialog {
 
 #pdf_viewer {  
   padding: 15px;
-  background: rgb(25,25,25);
+  background: rgb(25,25,25);  
+  width: 80%;
+  aspect-ratio: 10/9.25;
   
   transition-property: translate;
   transition-duration: 2s;
@@ -705,6 +707,12 @@ p.pitch {
   transform: translate(-50%, -50%);
   color: #e9ba4e;
   font-size: 150px;
+}
+
+.rocco-link:hover {
+  .rocco-link-back {
+    color: red;
+  }
 }
 
 .rocco-link a {
