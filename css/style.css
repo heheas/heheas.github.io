@@ -704,7 +704,7 @@ p.pitch {
   height: 80px;
 }
 
-.small .rocco-link-back {
+.small > .rocco-link-back {
   font-size:80px;
 }
 
