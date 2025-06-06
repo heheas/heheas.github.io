@@ -381,6 +381,8 @@ dialog {
   translate: 0 0;
 }
 #pdf_viewer.collapsed {
+  padding:0px;
+  
   transition-property: translate;
   transition-duration: 2s;
   translate: 0 -100%;
