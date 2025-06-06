@@ -377,15 +377,17 @@ dialog {
   background: rgb(25,25,25);  
   width: 80%;
   aspect-ratio: 10/9.25;
-  
-  transition-property: translate 2s ease-out, background 2s ease-out;
+
+  transition: all 2s ease;
+  transition-property: translate, background;
   translate: 0 0;
 }
 
 #pdf_viewer.collapsed {
   background:none;
   
-  transition-property: translate 2s ease-out, background 2s ease-out;
+  transition: all 2s ease;
+  transition-property: translate, background;
   translate: 0 -100%;
 }
 
