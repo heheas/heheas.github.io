@@ -693,6 +693,7 @@ p.pitch {
 .rocco-link {
   position: relative;
   height: 175px;
+  cursor: pointer;
 }
 
 .rocco-link h3 {
