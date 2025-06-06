@@ -381,8 +381,8 @@ dialog {
   transition-timing-function: ease;
 }
 
-#instructions_viewer.collapsed {
-  height: calc((80vw - 60px) * 9.25 /10 );
+#instructions_viewer.collapsed {  
+  height: calc((1170px - 120px)*.8);
 }
 
 #pdf_viewer {  
