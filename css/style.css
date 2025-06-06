@@ -363,19 +363,20 @@ dialog {
 /* Instructions CSS */
 @keyframes instructions_animation {
   from {
-    translate: 0 -150vw;
-    scale: 200% 1;
+    translate: 0 -100%;
   }
 
   to {
     translate: 0 0;
-    scale: 100% 1;
   }
 }
-
+#instructions_viewer {
+  position: 0;
+}
 #instructions_viewer.collapsed {
-  animation-name: instructions_animation;
-  animation-duration: 2s;
+  transition-property: position;
+  transition-duration: 2s;
+  position: -100%;
 }
 
 
