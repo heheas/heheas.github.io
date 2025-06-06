@@ -382,7 +382,7 @@ dialog {
 }
 
 #instructions_viewer.collapsed {
-  height: calc((80vw - 60px) * 9.25 /10 );
+  height: calc((80vw - 135px) * 9.25 /10 );
 }
 
 #pdf_viewer {  
