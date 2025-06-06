@@ -374,9 +374,10 @@ dialog {
   transition-property: height;
   transition-duration: 2s;
   transition-timing-function: ease;
+  height:100%;
 }
 
-#pdf_viewer.collapsed {
+#instructions_viewer.collapsed {
   height:0%;
 }
 
