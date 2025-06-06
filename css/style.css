@@ -700,6 +700,14 @@ p.pitch {
   cursor: pointer;
 }
 
+.rocco-link.small {
+  height: 80px;
+}
+
+.small .rocco-link-back {
+  font-size:80px;
+}
+
 .rocco-link h3 {
   margin: 0 !important;
 }
@@ -712,10 +720,6 @@ p.pitch {
   transform: translate(-50%, -50%);
   color: #e9ba4e;
   font-size: 150px;
-}
-
-.rocco-link-back.small {
-  font-size:80px;
 }
 
 .rocco-link:hover {
