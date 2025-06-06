@@ -694,6 +694,7 @@ p.pitch {
 }
 
 .rocco-link-back {
+  position: absolute;
   text-shadow: -5px -5px 1px black, 5px 5px 1px black, -5px 5px 1px black, 5px -5px 1px black, 0px -7.75px 1px black, 0px 7.75px 1px black;
   top:50%;
   left:50%;
@@ -706,7 +707,7 @@ p.pitch {
   height: 175px;
 }
 
-.rocco-link-anchor-wrapper a {
+.rocco-link-wrapper a {
   color: #FFF;
   text-align: center;
   position: absolute;
