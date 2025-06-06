@@ -361,14 +361,20 @@ dialog {
 /* end Modal Section */
 
 /* Instructions CSS */
-@keyframes instructions {
-  0%   {height:0};
-  100% {height:initial;}
+@keyframes instructions_animation {
+  from {
+    translate: 0 -150vw;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
 }
 
 #instructions_viewer.collapsed {
-  display: none;
-  animation-name: instructions;
+  animation-name: instructions_animation;
   animation-duration: 2s;
 }
 
