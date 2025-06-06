@@ -381,16 +381,12 @@ dialog {
 
   transition-property: translate, background;
   transition-duration: 2s;
-  transition-function: ease;
+  transition-timing-function: ease;
 }
 
 #pdf_viewer.collapsed {
   background:none;
   translate: 0 -100%;
-  
-  transition-property: translate, background;
-  transition-duration: 2s;
-  transition-function: ease;
 }
 
 
