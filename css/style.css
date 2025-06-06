@@ -371,12 +371,12 @@ dialog {
   }
 }
 #instructions_viewer {
-  position: 0;
+  overflow: hidden;
 }
-#instructions_viewer.collapsed {
-  transition-property: position;
+#pdf_viewer.collapsed {
+  transition-property: translate;
   transition-duration: 2s;
-  position: -100%;
+  translate: 0 -100%;
 }
 
 
