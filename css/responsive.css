@@ -223,6 +223,10 @@
     margin-bottom: 35px;
   }
 
+  .instructions {
+    display: none;
+  }
+
 }
 
 @media (max-width: 480px) {}
