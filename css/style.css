@@ -383,7 +383,7 @@ dialog {
   translate: 0 0;
 }
 #pdf_viewer.collapsed {
-  padding:0px;
+  background:none;
   
   transition-property: translate;
   transition-duration: 2s;
