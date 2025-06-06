@@ -121,7 +121,7 @@ function closeMenu() {
 }
 
 function toggleInstructions() {
-    $('#instructions_viewer').toggleClass('collapsed');
+    $('#pdf_viewer').toggleClass('collapsed');
 }
 
 /*
