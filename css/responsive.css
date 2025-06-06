@@ -123,6 +123,10 @@
   .dialog_title {
       font-size: 1em;
   }
+
+  #instructions_viewer {
+    height: calc((960px - 45px)*.8);
+  }
 }
 
 @media (max-width: 768px) {
