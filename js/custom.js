@@ -120,6 +120,10 @@ function closeMenu() {
     $('.navbar-collapse').removeClass('menuToggleExpand');
 }
 
+function toggleInstructions() {
+    $('.instructions_viewer').toggleClass('collapsed');
+}
+
 /*
 $('.custom_slick_slider').slick({
     slidesToShow: 1,
