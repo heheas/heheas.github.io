@@ -260,7 +260,7 @@
 
 @media (min-width: 768px) {
   #instructions_viewer.collapsed {
-    height: calc((920px - 45px)*.8) !important;
+    height: calc((720px - 45px)*.8) !important;
   }
 }
 
