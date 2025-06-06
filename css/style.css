@@ -360,6 +360,11 @@ dialog {
 }
 /* end Modal Section */
 
+/* Instructions CSS */
+#instructions_viewer.collapsed {
+  display: none;
+}
+
 
 /* section styling */
 section:nth-child(odd), section:nth-child(even) span.section_transition {
