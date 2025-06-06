@@ -258,6 +258,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  #instructions_viewer.collapsed {
+    height: calc((920px - 45px)*.8) !important;
+  }
+}
+
 @media (min-width: 992px) {
   #instructions_viewer.collapsed {
     height: calc((960px - 45px)*.8) !important;
