@@ -361,6 +361,12 @@ dialog {
 /* end Modal Section */
 
 /* Instructions CSS */
+.instructions {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  flex-direction: column;
+}
 
 #instructions_viewer {
   overflow: hidden;
@@ -688,10 +694,10 @@ p.pitch {
 }
 
 .rocco-link-back {
-  font-size: 150px;
   text-shadow: -5px -5px 1px black, 5px 5px 1px black, -5px 5px 1px black, 5px -5px 1px black, 0px -7.75px 1px black, 0px 7.75px 1px black;
-  margin-left: auto;
-  margin-right: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
   color: #e9ba4e;
 }
 
@@ -703,6 +709,15 @@ p.pitch {
 
 .rocco-link-anchor-wrapper a {
   color: #FFF;
+  text-align: center;
+  position: absolute;
+  text-wrap: wrap;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: larger;
 }
 
 .flicker {
