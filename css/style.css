@@ -693,7 +693,9 @@ p.pitch {
   text-align:center;
   font-style: italic;
 }
-
+.rocco-link h1,.rocco-link h2,.rocco-link h3,.rocco-link h4,.rocco-link h5,.rocco-link h6 {
+  color: white;
+}
 .rocco-link {
   position: relative;
   height: 175px;
