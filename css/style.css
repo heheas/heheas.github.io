@@ -366,8 +366,6 @@ dialog {
   align-content: center;
   display: flex;
   flex-direction: column;
-  width:80%;
-  aspect-ratio: 10/9.25;
 }
 
 #instructions_viewer {
