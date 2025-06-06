@@ -370,6 +370,14 @@ dialog {
 
 #instructions_viewer {
   overflow: hidden;
+  
+  transition-property: height;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+
+#pdf_viewer.collapsed {
+  height:0%;
 }
 
 #pdf_viewer {  
@@ -379,17 +387,8 @@ dialog {
   height: 100%;
   aspect-ratio: 10/9.25;
   /*translate: 0 0;*/
-
-  transition-property: height;
-  transition-duration: 2s;
-  transition-timing-function: ease;
 }
 
-#pdf_viewer.collapsed {
-  /*background:none;*/
-  translate: 0 -100%;
-  height:0%;
-}
 
 
 /* section styling */
