@@ -701,10 +701,9 @@ p.pitch {
   color: #e9ba4e;
 }
 
-.rocco-link-anchor-wrapper {
-  position: absolute;
-  width: 100%;
-  text-align: center;
+.rocco-link-wrapper {
+  position: relative;
+  height: 175px;
 }
 
 .rocco-link-anchor-wrapper a {
