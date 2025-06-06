@@ -390,7 +390,7 @@ dialog {
   transition-timing-function: ease;
 }
 
-#pdf_viewer.collapse {
+#pdf_viewer.collapsed {
   background: unset;
   transform: translate(0, -100%);
 }
