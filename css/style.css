@@ -702,6 +702,7 @@ p.pitch {
   left:50%;
   transform: translate(-50%, -50%);
   color: #e9ba4e;
+  font-size: 150px;
 }
 
 .rocco-link a {
