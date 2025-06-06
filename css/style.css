@@ -383,7 +383,7 @@ dialog {
   aspect-ratio: 10/9.25;
   width: 80%;
   height: 100%;
-  transform: translate(0 0);
+  transform: translate(0, 0);
   
   transition-property: transform, background;
   transition-duration: 2s;
@@ -392,7 +392,7 @@ dialog {
 
 #pdf_viewer.collapse {
   background: unset;
-  transform: translate(0 -100%);
+  transform: translate(0, -100%);
 }
 
 
