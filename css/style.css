@@ -371,13 +371,9 @@ dialog {
 #instructions_viewer {
   overflow: hidden;
   height: auto;
-  
-  transition-property: height;
-  transition-duration: 2s;
-  transition-timing-function: ease;
 }
 
-#instructions_viewer.collapsed {
+#instructions_viewer {
   height:0px;
 }
 
@@ -387,7 +383,16 @@ dialog {
   aspect-ratio: 10/9.25;
   width: 80%;
   height: 100%;
-  /*translate: 0 0;*/
+  translate: 0 0;
+  
+  transition-property: translate, background;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+
+#pdf_viewer.collapse {
+  background: unset;
+  translate: 0 -100%;
 }
 
 
