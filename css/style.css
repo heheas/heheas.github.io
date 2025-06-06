@@ -382,16 +382,17 @@ dialog {
   background: rgb(25,25,25);  
   aspect-ratio: 10/9.25;
   width: 80%;
-  height: 100%;
+  height: calc(100%);
   transform: translate(0, 0);
   
-  transition-property: transform, background;
+  transition-property: transform, background, height;
   transition-duration: 2s;
   transition-timing-function: ease;
 }
 
 #pdf_viewer.collapsed {
   background: unset;
+  height: 0;
   transform: translate(0, -100%);
 }
 
