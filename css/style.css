@@ -372,7 +372,7 @@ dialog {
 
 #instructions_viewer {
   overflow: hidden;
-  height: calc(;
+  height: auto;
   
   transition-property: height;
   transition-duration: 2s;
@@ -380,7 +380,7 @@ dialog {
 }
 
 #instructions_viewer.collapsed {
-  height:0;
+  height:0px;
 }
 
 #pdf_viewer {  
