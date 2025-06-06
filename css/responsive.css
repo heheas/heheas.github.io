@@ -1,6 +1,10 @@
 @media (max-width: 1300px) {}
 
-@media (max-width: 1120px) {}
+@media (max-width: 1120px) {
+  #instructions_viewer.collapsed {
+    height: calc((960px - 45px)*.8) !important;
+  }
+}
 
 @media (max-width: 992px) {
   .long_section {
@@ -125,7 +129,7 @@
   }
 
   #instructions_viewer.collapsed {
-    height: calc((960px - 45px)*.8) !important;
+    height: calc((720px - 45px)*.8) !important;
   }
 }
 
@@ -218,6 +222,7 @@
   .instructions {
     display: none;
   }
+  
 }
 
 @media (max-width: 576px) {
