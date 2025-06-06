@@ -711,6 +711,10 @@ p.pitch {
   font-size: 150px;
 }
 
+.rocco-link-back.small {
+  font-size:80px;
+}
+
 .rocco-link:hover {
   .rocco-link-back {
     color: #ac7e12;
