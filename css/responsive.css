@@ -210,6 +210,10 @@
     margin: 0 5px;
   }
 
+
+  .instructions {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -221,10 +225,6 @@
 
   .info_section .info_links .info_links_menu {
     margin-bottom: 35px;
-  }
-
-  .instructions {
-    display: none;
   }
 
 }
