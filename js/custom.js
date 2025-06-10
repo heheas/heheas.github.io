@@ -126,7 +126,7 @@ function toggleInstructions() {
 
 function toggleMailingList() {
     var mailingList = $('#mailingList');
-    if (!$(mailingList).hasClass('Explanded')) {
+    if ($(mailingList).hasClass('Explanded')) {
         $(mailingList).find('h5').html("Join our mailing list!");
     } else {
         $(mailingList).find('h5').html('<i class="fa-solid fa-caret-down" style="font-size:xx-large;"></i>');
