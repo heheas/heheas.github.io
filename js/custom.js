@@ -127,9 +127,13 @@ function toggleInstructions() {
 function toggleMailingList() {
     var mailingList = $('#mailingList');
     if ($(mailingList).hasClass('Expanded')) {
-        $(mailingList).find('h5').html("Join our mailing list!");
+        setTimeout({
+            $(mailingList).find('h5').html("Join our mailing list!");
+        }, 250ms);
     } else {
-        $(mailingList).find('h5').html('<i class="fa-solid fa-caret-down" style="font-size:xx-large;"></i>');
+        setTimeout({
+        $    (mailingList).find('h5').html('<i class="fa-solid fa-caret-down" style="font-size:xx-large;"></i>');
+        }, 250ms);
     }
     $(mailingList).toggleClass('Expanded');
 }
