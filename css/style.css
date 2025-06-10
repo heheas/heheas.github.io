@@ -760,6 +760,9 @@ p.pitch {
   }
 
   .mailingList h5 {
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
   }
   .mailingList.Expanded h5 {
     animation-name: spin;
