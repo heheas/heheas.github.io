@@ -746,9 +746,19 @@ p.pitch {
   .mailingListMobile {
     display: none;
   }
-  .mailingList {
-    display: flex;
+  .mailingList {  
+    display: inline-block;
+    bottom: -465px;
+    position: fixed;
+    right: 0px;
+    transition: bottom 2s ease;
   }
+
+  .mailingListExpand {
+    bottom: 0px;
+  }
+
+  
 
 .flicker {
   color: #483A4B;
