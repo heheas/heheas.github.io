@@ -747,8 +747,9 @@ p.pitch {
     display: none;
   }
   .mailingList {  
+    z-index: 9999;
     display: inline-block;
-    bottom: -465px;
+    bottom: -475px;
     position: fixed;
     right: 0px;
     transition: bottom 2s ease;
