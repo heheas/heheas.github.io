@@ -754,7 +754,7 @@ p.pitch {
     transition: bottom 2s ease;
   }
 
-  .mailingListExpand {
+  .mailingList.Expanded {
     bottom: 0px;
   }
 
