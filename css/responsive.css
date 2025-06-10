@@ -129,7 +129,7 @@
 @media (max-width: 768px) {
 
   .mailingListMobile {
-    display: flex;
+    display: inline-block;
   }
   .mailingList {
     display: none;
