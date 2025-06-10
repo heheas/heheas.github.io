@@ -130,11 +130,16 @@ function toggleMailingList() {
         //setTimeout(() => {
             $(mailingList).find('h5').html("Join our mailing list!");
         //}, 250ms);
+        
+        setTimeout(() => {
+        }, 250);
     } else {
         //setTimeout(() => {
             $(mailingList).find('h5').html('<i class="fa-solid fa-caret-down" style="font-size:xx-large;"></i>');
         //}, 250ms);
 
+        setTimeout(() => {
+        }, 250);
     }
     $(mailingList).toggleClass('Expanded');
 }
