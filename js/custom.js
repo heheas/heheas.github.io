@@ -124,6 +124,10 @@ function toggleInstructions() {
     $('#instructions_viewer').toggleClass('collapsed');
 }
 
+function toggleMailingList() {
+    $('#mailingList').toggleClass('Expanded');
+}
+
 /*
 $('.custom_slick_slider').slick({
     slidesToShow: 1,
