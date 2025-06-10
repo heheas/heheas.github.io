@@ -125,7 +125,8 @@ function toggleInstructions() {
 }
 
 function toggleMailingList() {
-    $('#mailingList').toggleClass('Expanded');
+    var mailingList = $('#mailingList');
+    $(mailingList).toggleClass('Expanded');
 }
 
 /*
