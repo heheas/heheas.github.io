@@ -743,6 +743,13 @@ p.pitch {
   font-size: larger;
 }
 
+  .mailingListMobile {
+    display: none;
+  }
+  .mailingList {
+    display: flex;
+  }
+
 .flicker {
   color: #483A4B;
 }
