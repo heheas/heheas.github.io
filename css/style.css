@@ -760,20 +760,30 @@ p.pitch {
   }
 
   .mailingList h5 {
-    
+    animation-name: spin-out;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
   }
   .mailingList.Expanded h5 {
-    animation-name: spin;
+    animation-name: spin-in;
     animation-duration: 500ms;
     animation-timing-function: linear;
   }
 
-  @keyframes spin {
+  @keyframes spin-in {
       from {
           transform:rotate(0deg);
       }
       to {
           transform:rotate(360deg);
+      }
+  }
+  @keyframes spin-out {
+      from {
+          transform:rotate(-360deg);
+      }
+      to {
+          transform:rotate(0deg);
       }
   }
   
