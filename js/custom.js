@@ -127,18 +127,12 @@ function toggleInstructions() {
 function toggleMailingList() {
     var mailingList = $('#mailingList');
     if ($(mailingList).hasClass('Expanded')) {
-        //setTimeout(() => {
-            $(mailingList).find('h5').html("Join our mailing list!");
-        //}, 250ms);
-        
         setTimeout(() => {
+            $(mailingList).find('h5').html("Join our mailing list!");
         }, 250);
     } else {
-        //setTimeout(() => {
-            $(mailingList).find('h5').html('<i class="fa-solid fa-caret-down" style="font-size:xx-large;"></i>');
-        //}, 250ms);
-
         setTimeout(() => {
+            $(mailingList).find('h5').html('<i class="fa-solid fa-caret-down" style="font-size:xx-large;"></i>');
         }, 250);
     }
     $(mailingList).toggleClass('Expanded');
