@@ -1,0 +1,176 @@
+/* =========================
+GLOBAL
+========================= */
+
+:root {
+--var1: #ff5555;
+--var2: #55ff55;
+--var3: #5599ff;
+}
+
+{
+box-sizing: border-box;
+}
+
+body {
+font-family: system-ui, sans-serif;
+
+background: #111;
+color: white;
+
+margin: 0;
+padding: 40px;
+}
+
+/* =========================
+BUTTONS
+========================= */
+
+button {
+padding: 10px 16px;
+
+border: 0;
+border-radius: 8px;
+
+cursor: pointer;
+
+font-size: 15px;
+}
+
+/* =========================
+SETTINGS
+========================= */
+
+#settings {
+margin-top: 30px;
+
+max-width: 400px;
+
+background: #1c1c1c;
+
+border-radius: 12px;
+
+overflow: hidden;
+}
+
+#settings summary {
+padding: 15px 18px;
+
+cursor: pointer;
+
+font-weight: bold;
+
+user-select: none;
+}
+
+#settings summary:hover {
+background: #252525;
+}
+
+.settings-content {
+padding: 0 18px 18px;
+}
+
+.setting {
+display: flex;
+
+align-items: center;
+justify-content: space-between;
+
+padding: 12px 0;
+
+border-top: 1px solid #333;
+}
+
+.setting label {
+font-weight: 500;
+}
+
+.setting input[type="color"] {
+width: 50px;
+height: 35px;
+
+padding: 2px;
+
+border: none;
+border-radius: 6px;
+
+background: transparent;
+
+cursor: pointer;
+}
+
+/* =========================
+PIP CONTAINER
+========================= */
+
+#pip-container {
+margin-top: 30px;
+}
+
+/* =========================
+MAIN WIDGET
+========================= */
+
+#my-element {
+width: 300px;
+
+padding: 30px;
+
+border-radius: 16px;
+
+background: #292929;
+
+text-align: center;
+
+box-shadow:
+0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================
+COUNTER
+========================= */
+
+#counter {
+font-size: 48px;
+
+font-weight: bold;
+
+margin: 15px 0;
+}
+
+.counter-buttons {
+display: flex;
+
+justify-content: center;
+
+gap: 8px;
+}
+
+/* =========================
+VARIABLES
+========================= */
+
+.variable-display {
+display: flex;
+
+justify-content: space-around;
+
+margin-top: 25px;
+}
+
+.variable {
+font-weight: bold;
+}
+
+.var1 {
+color: var(--var1);
+}
+
+.var2 {
+color: var(--var2);
+}
+
+.var3 {
+color: var(--var3);
+}
