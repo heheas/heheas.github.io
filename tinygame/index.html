@@ -2,98 +2,130 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Document PiP Example</title>
+  <title>Move Element into Document PiP</title>
+
   <style>
     body {
       font-family: system-ui, sans-serif;
-      display: grid;
-      place-items: center;
-      height: 100vh;
-      margin: 0;
       background: #111;
       color: white;
+      margin: 0;
+      padding: 40px;
+    }
+
+    #pip-container {
+      margin-top: 30px;
+    }
+
+    #my-element {
+      width: 300px;
+      padding: 30px;
+      border-radius: 16px;
+      background: #292929;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,.4);
+    }
+
+    #counter {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 15px 0;
     }
 
     button {
-      padding: 12px 20px;
-      font-size: 16px;
+      padding: 10px 16px;
+      border: 0;
+      border-radius: 8px;
       cursor: pointer;
+      font-size: 15px;
     }
   </style>
 </head>
+
 <body>
 
-  <button id="openPip">Open Counter in PiP</button>
+  <h1>My Web App</h1>
+
+  <button id="pip-button">
+    Open in Picture-in-Picture
+  </button>
+
+  <!-- This is where the element normally lives -->
+  <div id="pip-container">
+
+    <div id="my-element">
+      <h2>My Floating Widget</h2>
+
+      <div id="counter">0</div>
+
+      <button id="minus">−</button>
+      <button id="plus">+</button>
+    </div>
+
+  </div>
+
 
   <script>
-    const button = document.getElementById("openPip");
+    const pipButton = document.getElementById("pip-button");
+    const element = document.getElementById("my-element");
+    const container = document.getElementById("pip-container");
 
-    button.addEventListener("click", async () => {
-      // Check browser support
+    let count = 0;
+
+    // Normal page functionality
+    document.getElementById("plus").addEventListener("click", () => {
+      count++;
+      document.getElementById("counter").textContent = count;
+    });
+
+    document.getElementById("minus").addEventListener("click", () => {
+      count--;
+      document.getElementById("counter").textContent = count;
+    });
+
+
+    pipButton.addEventListener("click", async () => {
+
       if (!("documentPictureInPicture" in window)) {
         alert("Document Picture-in-Picture is not supported.");
         return;
       }
 
-      // Open the floating PiP window
+      // Open PiP
       const pipWindow =
         await documentPictureInPicture.requestWindow({
-          width: 300,
-          height: 200
+          width: 350,
+          height: 300
         });
 
-      // Put arbitrary HTML into the PiP window
-      pipWindow.document.body.innerHTML = `
-        <style>
-          body {
-            margin: 0;
-            height: 100vh;
-            display: grid;
-            place-items: center;
-            background: #222;
-            color: white;
-            font-family: system-ui, sans-serif;
-          }
 
-          .counter {
-            text-align: center;
-          }
+      // Copy our page's stylesheets into the PiP window
+      for (const styleSheet of document.styleSheets) {
+        try {
+          const cssRules = [...styleSheet.cssRules]
+            .map(rule => rule.cssText)
+            .join("");
 
-          #count {
-            font-size: 48px;
-            font-weight: bold;
-          }
+          const style = pipWindow.document.createElement("style");
+          style.textContent = cssRules;
 
-          button {
-            padding: 8px 16px;
-            margin: 4px;
-            cursor: pointer;
-          }
-        </style>
+          pipWindow.document.head.appendChild(style);
 
-        <div class="counter">
-          <div id="count">0</div>
-          <button id="minus">−</button>
-          <button id="plus">+</button>
-        </div>
-      `;
+        } catch (error) {
+          // Some external stylesheets may not allow cssRules access
+        }
+      }
 
-      // Normal JavaScript works inside the PiP document
-      let count = 0;
 
-      const countElement = pipWindow.document.getElementById("count");
+      // Move the ACTUAL element into PiP
+      pipWindow.document.body.appendChild(element);
 
-      pipWindow.document.getElementById("plus")
-        .addEventListener("click", () => {
-          count++;
-          countElement.textContent = count;
-        });
 
-      pipWindow.document.getElementById("minus")
-        .addEventListener("click", () => {
-          count--;
-          countElement.textContent = count;
-        });
+      // When PiP closes, put the element back
+      pipWindow.addEventListener("pagehide", () => {
+        container.appendChild(element);
+      });
+
     });
   </script>
 
