@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Move Element into Document PiP</title>
+  <title>Document PiP - Move Element</title>
 
   <style>
     body {
@@ -23,7 +23,7 @@
       border-radius: 16px;
       background: #292929;
       text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,.4);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
 
     #counter {
@@ -50,7 +50,6 @@
     Open in Picture-in-Picture
   </button>
 
-  <!-- This is where the element normally lives -->
   <div id="pip-container">
 
     <div id="my-element">
@@ -64,69 +63,86 @@
 
   </div>
 
-
   <script>
     const pipButton = document.getElementById("pip-button");
     const element = document.getElementById("my-element");
     const container = document.getElementById("pip-container");
 
+    // Keep a direct reference to the counter element.
+    // This reference remains valid even when the element
+    // is moved into the PiP document.
+    const counter = document.getElementById("counter");
+
     let count = 0;
 
-    // Normal page functionality
+    // Increment
     document.getElementById("plus").addEventListener("click", () => {
       count++;
-      document.getElementById("counter").textContent = count;
+      counter.textContent = count;
     });
 
+    // Decrement
     document.getElementById("minus").addEventListener("click", () => {
       count--;
-      document.getElementById("counter").textContent = count;
+      counter.textContent = count;
     });
 
 
     pipButton.addEventListener("click", async () => {
 
+      // Check browser support
       if (!("documentPictureInPicture" in window)) {
         alert("Document Picture-in-Picture is not supported.");
         return;
       }
 
-      // Open PiP
-      const pipWindow =
-        await documentPictureInPicture.requestWindow({
-          width: 350,
-          height: 300
+      try {
+        // Open the PiP window
+        const pipWindow =
+          await documentPictureInPicture.requestWindow({
+            width: 350,
+            height: 300
+          });
+
+
+        // Copy the page's styles into the PiP window
+        for (const styleSheet of document.styleSheets) {
+          try {
+            const cssRules = [...styleSheet.cssRules]
+              .map(rule => rule.cssText)
+              .join("");
+
+            const style = pipWindow.document.createElement("style");
+
+            style.textContent = cssRules;
+
+            pipWindow.document.head.appendChild(style);
+
+          } catch (error) {
+            // Some external stylesheets cannot be accessed.
+            // We can safely ignore those here.
+          }
+        }
+
+
+        // Move the EXISTING element into the PiP window.
+        //
+        // The element is not cloned or recreated.
+        // Its event listeners and state remain intact.
+        pipWindow.document.body.appendChild(element);
+
+
+        // When the PiP window closes,
+        // move the same element back to the main page.
+        pipWindow.addEventListener("pagehide", () => {
+          container.appendChild(element);
         });
 
-
-      // Copy our page's stylesheets into the PiP window
-      for (const styleSheet of document.styleSheets) {
-        try {
-          const cssRules = [...styleSheet.cssRules]
-            .map(rule => rule.cssText)
-            .join("");
-
-          const style = pipWindow.document.createElement("style");
-          style.textContent = cssRules;
-
-          pipWindow.document.head.appendChild(style);
-
-        } catch (error) {
-          // Some external stylesheets may not allow cssRules access
-        }
+      } catch (error) {
+        console.error("Could not open Picture-in-Picture:", error);
       }
-
-
-      // Move the ACTUAL element into PiP
-      pipWindow.document.body.appendChild(element);
-
-
-      // When PiP closes, put the element back
-      pipWindow.addEventListener("pagehide", () => {
-        container.appendChild(element);
-      });
-
     });
+
   </script>
 
 </body>
