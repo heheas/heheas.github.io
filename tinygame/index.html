@@ -1,149 +1,112 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Document PiP - Move Element</title>
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Document PiP - Move Element</title> <link rel="stylesheet" href="styles.css"> </head> <body> <main>
+<h1>My Web App</h1>
 
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background: #111;
-      color: white;
-      margin: 0;
-      padding: 40px;
-    }
+<!-- PiP Button -->
+<button id="pip-button">
+  Open in Picture-in-Picture
+</button>
 
-    #pip-container {
-      margin-top: 30px;
-    }
 
-    #my-element {
-      width: 300px;
-      padding: 30px;
-      border-radius: 16px;
-      background: #292929;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    }
+<!-- =========================
+     SETTINGS
+     ========================= -->
 
-    #counter {
-      font-size: 48px;
-      font-weight: bold;
-      margin: 15px 0;
-    }
+<details id="settings">
 
-    button {
-      padding: 10px 16px;
-      border: 0;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 15px;
-    }
-  </style>
-</head>
+  <summary>⚙ Settings</summary>
 
-<body>
+  <div class="settings-content">
 
-  <h1>My Web App</h1>
+    <div class="setting">
+      <label for="var1-color">
+        Variable 1
+      </label>
 
-  <button id="pip-button">
-    Open in Picture-in-Picture
-  </button>
+      <input
+        type="color"
+        id="var1-color"
+        value="#ff5555"
+      >
+    </div>
 
-  <div id="pip-container">
 
-    <div id="my-element">
-      <h2>My Floating Widget</h2>
+    <div class="setting">
+      <label for="var2-color">
+        Variable 2
+      </label>
 
-      <div id="counter">0</div>
+      <input
+        type="color"
+        id="var2-color"
+        value="#55ff55"
+      >
+    </div>
 
-      <button id="minus">−</button>
-      <button id="plus">+</button>
+
+    <div class="setting">
+      <label for="var3-color">
+        Variable 3
+      </label>
+
+      <input
+        type="color"
+        id="var3-color"
+        value="#5599ff"
+      >
     </div>
 
   </div>
 
-  <script>
-    const pipButton = document.getElementById("pip-button");
-    const element = document.getElementById("my-element");
-    const container = document.getElementById("pip-container");
-
-    // Keep a direct reference to the counter element.
-    // This reference remains valid even when the element
-    // is moved into the PiP document.
-    const counter = document.getElementById("counter");
-
-    let count = 0;
-
-    // Increment
-    document.getElementById("plus").addEventListener("click", () => {
-      count++;
-      counter.textContent = count;
-    });
-
-    // Decrement
-    document.getElementById("minus").addEventListener("click", () => {
-      count--;
-      counter.textContent = count;
-    });
+</details>
 
 
-    pipButton.addEventListener("click", async () => {
+<!-- =========================
+     WIDGET CONTAINER
+     ========================= -->
 
-      // Check browser support
-      if (!("documentPictureInPicture" in window)) {
-        alert("Document Picture-in-Picture is not supported.");
-        return;
-      }
+<div id="pip-container">
 
-      try {
-        // Open the PiP window
-        const pipWindow =
-          await documentPictureInPicture.requestWindow({
-            width: 350,
-            height: 300
-          });
+  <div id="my-element">
 
+    <h2>My Floating Widget</h2>
 
-        // Copy the page's styles into the PiP window
-        for (const styleSheet of document.styleSheets) {
-          try {
-            const cssRules = [...styleSheet.cssRules]
-              .map(rule => rule.cssText)
-              .join("");
+    <div id="counter">
+      0
+    </div>
 
-            const style = pipWindow.document.createElement("style");
+    <div class="counter-buttons">
 
-            style.textContent = cssRules;
+      <button id="minus">
+        −
+      </button>
 
-            pipWindow.document.head.appendChild(style);
+      <button id="plus">
+        +
+      </button>
 
-          } catch (error) {
-            // Some external stylesheets cannot be accessed.
-            // We can safely ignore those here.
-          }
-        }
+    </div>
 
 
-        // Move the EXISTING element into the PiP window.
-        //
-        // The element is not cloned or recreated.
-        // Its event listeners and state remain intact.
-        pipWindow.document.body.appendChild(element);
+    <!-- Variable examples -->
 
+    <div class="variable-display">
 
-        // When the PiP window closes,
-        // move the same element back to the main page.
-        pipWindow.addEventListener("pagehide", () => {
-          container.appendChild(element);
-        });
+      <div class="variable var1">
+        VAR 1
+      </div>
 
-      } catch (error) {
-        console.error("Could not open Picture-in-Picture:", error);
-      }
-    });
+      <div class="variable var2">
+        VAR 2
+      </div>
 
-  </script>
+      <div class="variable var3">
+        VAR 3
+      </div>
 
-</body>
-</html>
+    </div>
+
+  </div>
+
+</div>
+
+</main> <script src="app.js"></script> </body> </html>
