@@ -1,4 +1,101 @@
+<!DOCTYPE html>
 <html>
-<head>Tiny</head>
-<body>Hello, World!</body>
+<head>
+  <meta charset="UTF-8">
+  <title>Document PiP Example</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #111;
+      color: white;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="openPip">Open Counter in PiP</button>
+
+  <script>
+    const button = document.getElementById("openPip");
+
+    button.addEventListener("click", async () => {
+      // Check browser support
+      if (!("documentPictureInPicture" in window)) {
+        alert("Document Picture-in-Picture is not supported.");
+        return;
+      }
+
+      // Open the floating PiP window
+      const pipWindow =
+        await documentPictureInPicture.requestWindow({
+          width: 300,
+          height: 200
+        });
+
+      // Put arbitrary HTML into the PiP window
+      pipWindow.document.body.innerHTML = `
+        <style>
+          body {
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background: #222;
+            color: white;
+            font-family: system-ui, sans-serif;
+          }
+
+          .counter {
+            text-align: center;
+          }
+
+          #count {
+            font-size: 48px;
+            font-weight: bold;
+          }
+
+          button {
+            padding: 8px 16px;
+            margin: 4px;
+            cursor: pointer;
+          }
+        </style>
+
+        <div class="counter">
+          <div id="count">0</div>
+          <button id="minus">−</button>
+          <button id="plus">+</button>
+        </div>
+      `;
+
+      // Normal JavaScript works inside the PiP document
+      let count = 0;
+
+      const countElement = pipWindow.document.getElementById("count");
+
+      pipWindow.document.getElementById("plus")
+        .addEventListener("click", () => {
+          count++;
+          countElement.textContent = count;
+        });
+
+      pipWindow.document.getElementById("minus")
+        .addEventListener("click", () => {
+          count--;
+          countElement.textContent = count;
+        });
+    });
+  </script>
+
+</body>
 </html>
