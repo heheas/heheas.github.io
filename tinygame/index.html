@@ -1,112 +1,42 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Document PiP - Move Element</title> <link rel="stylesheet" href="styles.css"> </head> <body> <main>
-<h1>My Web App</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
-<!-- PiP Button -->
-<button id="pip-button">
-  Open in Picture-in-Picture
-</button>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
+  <title>Phaser RPG</title>
 
-<!-- =========================
-     SETTINGS
-     ========================= -->
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-<details id="settings">
+<body>
 
-  <summary>⚙ Settings</summary>
+  <main>
 
-  <div class="settings-content">
+    <header>
+      <h1>My RPG</h1>
 
-    <div class="setting">
-      <label for="var1-color">
-        Variable 1
-      </label>
-
-      <input
-        type="color"
-        id="var1-color"
-        value="#ff5555"
-      >
-    </div>
-
-
-    <div class="setting">
-      <label for="var2-color">
-        Variable 2
-      </label>
-
-      <input
-        type="color"
-        id="var2-color"
-        value="#55ff55"
-      >
-    </div>
-
-
-    <div class="setting">
-      <label for="var3-color">
-        Variable 3
-      </label>
-
-      <input
-        type="color"
-        id="var3-color"
-        value="#5599ff"
-      >
-    </div>
-
-  </div>
-
-</details>
-
-
-<!-- =========================
-     WIDGET CONTAINER
-     ========================= -->
-
-<div id="pip-container">
-
-  <div id="my-element">
-
-    <h2>My Floating Widget</h2>
-
-    <div id="counter">
-      0
-    </div>
-
-    <div class="counter-buttons">
-
-      <button id="minus">
-        −
+      <button id="pip-button">
+        Open Game in Picture-in-Picture
       </button>
-
-      <button id="plus">
-        +
-      </button>
-
-    </div>
+    </header>
 
 
-    <!-- Variable examples -->
+    <!--
+      Phaser will create its canvas inside this element.
+    -->
+    <div id="game-container"></div>
 
-    <div class="variable-display">
+  </main>
 
-      <div class="variable var1">
-        VAR 1
-      </div>
 
-      <div class="variable var2">
-        VAR 2
-      </div>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
 
-      <div class="variable var3">
-        VAR 3
-      </div>
+  <script type="module" src="app.js"></script>
 
-    </div>
-
-  </div>
-
-</div>
-
-</main> <script src="app.js"></script> </body> </html>
+</body>
+</html>
