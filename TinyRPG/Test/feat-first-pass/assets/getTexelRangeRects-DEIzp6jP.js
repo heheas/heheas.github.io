@@ -1,4 +1,4 @@
-import{w as _,e as g,f as d,u as U,B as y,h,E as I,j as p}from"./index-Tr0HFHVk.js";const x={name:"local-uniform-bit",vertex:{header:`
+import{w as _,f as g,h as d,u as U,B as y,j as h,E as I,k as p}from"./index-nHDxGQfp.js";const x={name:"local-uniform-bit",vertex:{header:`
 
             struct LocalUniforms {
                 uTransformMatrix:mat3x3<f32>,
@@ -125,7 +125,7 @@ import{w as _,e as g,f as d,u as U,B as y,h,E as I,j as p}from"./index-Tr0HFHVk.
                 cv[2] = v.blue;
                 gl.uniform3f(ud[name].location, v.red, v.green, v.blue);
             }
-        `}];function A(e,t,a){const s=[`
+        `}];function k(e,t,a){const s=[`
         var v = null;
         var v2 = null;
         var t = 0;
@@ -187,9 +187,9 @@ import{w as _,e as g,f as d,u as U,B as y,h,E as I,j as p}from"./index-Tr0HFHVk.
         data[offset + 10] = v[8];`,"mat4x4<f32>":`
         for (let i = 0; i < 16; i++) {
             data[offset + i] = v[i];
-        }`,"mat3x2<f32>":l(3,2),"mat4x2<f32>":l(4,2),"mat2x3<f32>":l(2,3),"mat4x3<f32>":l(4,3),"mat2x4<f32>":l(2,4),"mat3x4<f32>":l(3,4)},k={...M,"mat2x2<f32>":`
+        }`,"mat3x2<f32>":l(3,2),"mat4x2<f32>":l(4,2),"mat2x3<f32>":l(2,3),"mat4x3<f32>":l(4,3),"mat2x4<f32>":l(2,4),"mat3x4<f32>":l(3,4)},A={...M,"mat2x2<f32>":`
         data[offset] = v[0];
         data[offset + 1] = v[1];
         data[offset + 2] = v[2];
         data[offset + 3] = v[3];
-    `};class w extends I{constructor({buffer:t,offset:a,size:s}){super(),this.uid=p("buffer"),this._resourceType="bufferResource",this._resourceId=p("resource"),this._bufferResource=!0,this.destroyed=!1,this.buffer=t,this.offset=a|0,this.size=s,this.buffer.on("change",this.onBufferChange,this)}get _gcLastUsed(){var t;return((t=this.buffer)==null?void 0:t._gcLastUsed)??-1}set _gcLastUsed(t){this.buffer&&(this.buffer._gcLastUsed=t)}onBufferChange(){this._resourceId=p("resource"),this.emit("change",this)}destroy(t=!1){this.destroyed=!0,t&&this.buffer.destroy(),this.emit("change",this),this.buffer=null,this.removeAllListeners()}}function P(e,t,a,s,r){if(e=Math.max(0,e),t=Math.min(t,a*s),e>=t)return 0;const o=Math.floor(e/a),f=e-o*a,n=Math.floor(t/a),v=t-n*a;if(o===n)return r[0].set(f,o,v-f,1),1;let u=0,i=o;return f>0&&(r[u++].set(f,o,a-f,1),i++),n>i&&r[u++].set(0,i,a,n-i),v>0&&r[u++].set(0,n,v,1),u}export{w as B,m as G,O as U,x as a,M as b,A as c,b as d,D as e,E as f,P as g,C as h,T as l,B as t,k as u};
+    `};class w extends I{constructor({buffer:t,offset:a,size:s}){super(),this.uid=p("buffer"),this._resourceType="bufferResource",this._resourceId=p("resource"),this._bufferResource=!0,this.destroyed=!1,this.buffer=t,this.offset=a|0,this.size=s,this.buffer.on("change",this.onBufferChange,this)}get _gcLastUsed(){var t;return((t=this.buffer)==null?void 0:t._gcLastUsed)??-1}set _gcLastUsed(t){this.buffer&&(this.buffer._gcLastUsed=t)}onBufferChange(){this._resourceId=p("resource"),this.emit("change",this)}destroy(t=!1){this.destroyed=!0,t&&this.buffer.destroy(),this.emit("change",this),this.buffer=null,this.removeAllListeners()}}function P(e,t,a,s,r){if(e=Math.max(0,e),t=Math.min(t,a*s),e>=t)return 0;const o=Math.floor(e/a),f=e-o*a,n=Math.floor(t/a),v=t-n*a;if(o===n)return r[0].set(f,o,v-f,1),1;let u=0,i=o;return f>0&&(r[u++].set(f,o,a-f,1),i++),n>i&&r[u++].set(0,i,a,n-i),v>0&&r[u++].set(0,n,v,1),u}export{w as B,m as G,O as U,x as a,M as b,k as c,b as d,D as e,E as f,P as g,C as h,T as l,B as t,A as u};
