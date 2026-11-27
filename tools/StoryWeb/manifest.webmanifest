@@ -1,8 +1,0 @@
-{
-  "name": "Story Web",
-  "short_name": "Story Web",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#f4f1e9",
-  "icons": [{"src": "./spider.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]
-}
